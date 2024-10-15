@@ -85,7 +85,7 @@
   </div>
 </div>
 
-<div class="border-b-2 border-white"></div>
+<div class="border-b-2 mx-4 -mt-4 border-white"></div>
 
 <main class="flex items-center justify-center h-screen">
   <div class="flex flex-col text-center space-y-8">
