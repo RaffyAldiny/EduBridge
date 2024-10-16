@@ -13,9 +13,7 @@
 </head>
 <body class="bg-blue-800">
   @livewireScripts
-  <livewire:header />
-
-
+  <livewire:header/>
   <div class="container mt-5">
     <h1 class="text-center text-primary mb-4">I LOVE CJ ! I AM A FAN hehe</h1>
 
