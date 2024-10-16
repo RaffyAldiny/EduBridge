@@ -1,4 +1,4 @@
-<div>
+<div class>
     <div x-data="{ isOpen: false, currentPage: window.location.pathname }" class="relative flex items-center justify-between px-8 py-4">
         <div class="flex items-center space-x-2">
             <button 
@@ -37,26 +37,26 @@
             x-transition:leave="transition ease-in duration-100"
             x-transition:leave-start="opacity-100 transform scale-100"
             x-transition:leave-end="opacity-0 transform scale-95"
-            class="absolute top-16 left-8 w-40 text-center text-l bg-maincolor text-black rounded-lg mt-2"
+            class="absolute top-20 left-8 w-40 text-center text-l bg-maincolor text-black rounded-lg mt-2"
             style="box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);"
         >
             <ul class="p-2 space-y-2">
                 <li>
                     <a href="{{ url('/') }}">
-                        <button class="text-black w-full px-2 py-2 bg-maincolor hover:text-hover rounded" :class="{ 'font-bold': currentPage === '/' }">
+                        <button class="text-black w-full pt-2 bg-maincolor hover:text-hover rounded" :class="{ 'font-bold': currentPage === '/' }">
                             Home
                         </button>
                     </a>
                 </li>
                 <li>
                 <a href="{{ url('/about') }}">
-                    <button class="text-black w-full px-2 py-2 bg-maincolor hover:font-bold rounded" :class="{ 'font-bold': currentPage.includes('about') }">
+                    <button class="text-black w-full py-2 bg-maincolor hover:font-bold rounded" :class="{ 'font-bold': currentPage.includes('about') }">
                         About Us
                     </button>
                 </a>
                 </li>
                 <li>
-                    <button class="w-full px-2 py-2 bg-maincolor hover:font-bold rounded" :class="{ 'font-bold': currentPage.includes('contact') }">
+                    <button class="w-full pb-2 bg-maincolor hover:font-bold rounded" :class="{ 'font-bold': currentPage.includes('contact') }">
                         Contact Us
                     </button>
                 </li>
