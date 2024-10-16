@@ -1,11 +1,9 @@
 <!-- Student Login-Signup Modal -->
 <div x-show="showModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-    <div class="bg-[#D5EAFD] p-6 rounded-lg shadow-lg w-[400px]">
+    <div class="bg-[#c4eaf7] p-6 rounded-lg shadow-lg w-[400px]">
         <!-- Modal Header -->
-        <div class="flex justify-center items-center mb-4">
-            <!-- Logo -->
-            <img src="{{ asset('img/StudentLogo.png') }}" alt="Student Logo" class="w-8 h-8 mr-2">
-            <!-- Centered Title -->
+        <div class="flex justify-center items-center mb-[10px]">
+            <img src="{{ asset('img/StudentLogo.png') }}" alt="Student Logo" class="w-8 h-8 mr-2 mb-2">
             <h2 class="text-2xl font-bold text-[#0C3A5E]">STUDENT</h2>
         </div>
 
@@ -18,15 +16,13 @@
         <!-- Login Form -->
         <form x-show="isLogin" class="space-y-4">
             <!-- Username -->
-            <div class="mb-4">
-                <label class="block text-sm font-medium text-gray-700">Username</label>
-                <input type="text" class="mt-1 w-full p-2 border border-gray-300 rounded-md" placeholder="Enter your username">
+            <div class="mb-[2px]">
+                <input type="text" class="mt-1 w-full p-2 border-black border-2 rounded-[4px]" placeholder="Username">
             </div>
 
             <!-- Password -->
-            <div class="mb-4">
-                <label class="block text-sm font-medium text-gray-700">Password</label>
-                <input type="password" class="mt-1 w-full p-2 border border-gray-300 rounded-md" placeholder="Enter your password">
+            <div class="mb-1">
+                <input type="password" class=" w-full p-2  border-black border-2 rounded-[4px] " placeholder="Password">
             </div>
 
             <!-- Forgot Password (Centered) -->
@@ -36,7 +32,7 @@
 
             <!-- Login Button -->
             <div class="flex justify-between mt-6">
-                <button type="submit" class="bg-[#0C3A5E] text-white px-4 py-2 rounded-md w-[130px]">LOGIN</button>
+                <button type="submit" class="bg-black font-bold text-white px-4 py-2 rounded-md w-[130px]">LOGIN</button>
                 <button type="button" @click="showModal = false" class="bg-[#D5EAFD] text-[#0C3A5E] border border-[#0C3A5E] px-4 py-2 rounded-md w-[130px]">CANCEL</button>
             </div>
         </form>
