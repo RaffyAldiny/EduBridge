@@ -26,8 +26,10 @@
             <h1 class="text-2xl mt-2 font-bold text-maincolor">EduBridge</h1>
         </div>
 
-        <button class="text-maincolor px-4 py-2 hover:bg-blue-500 border-2 text-sm font-bold border-maincolor rounded-lg">L O G I N</button>
-
+        <a href="{{ url('/login') }}">
+            <button class="text-maincolor px-4 py-2 hover:bg-blue-500 border-2 text-sm font-bold border-maincolor rounded-lg">L O G I N</button>
+        </a>
+        
         <div 
             x-show="isOpen" 
             @click.away="isOpen = false"
