@@ -46,7 +46,7 @@
             <ul class="p-2 space-y-2">
                 <li>
                     <a href="{{ url('/') }}">
-                        <button class="text-black w-full pt-2 bg-maincolor hover:text-hover rounded" :class="{ 'font-bold': currentPage === '/' }">
+                        <button class="text-black w-full pt-2 bg-maincolor hover:font-bold rounded" :class="{ 'font-bold': currentPage === '/' }">
                             Home
                         </button>
                     </a>
