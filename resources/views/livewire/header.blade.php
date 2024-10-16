@@ -1,4 +1,5 @@
 <div class>
+<div class="absolute inset-0 bg-cover bg-center z-[-1]" style="background-image: url('{{ asset('img/edubridgebg.png') }}');"></div>
     <div x-data="{ isOpen: false, currentPage: window.location.pathname }" class="relative flex items-center justify-between px-8 py-4">
         <div class="flex items-center space-x-2">
             <button 

@@ -12,9 +12,6 @@
   <title>EduBridge</title>
 </head>
 <body class="relative h-screen text-maincolor p-4">
-
-  <!-- Separate Background Div using Tailwind CSS classes -->
-  <div class="absolute inset-0 bg-cover bg-center z-[-1]" style="background-image: url('{{ asset('img/edubridgebg.png') }}');"></div>
   @extends('layouts.floatingorbs')
   <livewire:header />
   @livewireScripts
