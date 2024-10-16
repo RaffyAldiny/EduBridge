@@ -21,14 +21,14 @@
         <!-- Button Section -->
         <div class="flex space-x-[68px] mt-4">
             <!-- Student Button -->
-            <button class="flex items-center justify-center w-[360px] h-[76px] bg-white text-blue-900 text-[32px] font-bold rounded-2xl shadow-md"
+            <button class="flex items-center justify-center w-[360px] h-[76px] bg-maincolor text-hover text-[32px] font-bold rounded-2xl shadow-md"
                 @click="showModal = true; isLogin = true">
                 <img src="{{ asset('img/StudentLogo.png') }}" alt="Student Icon" class="w-[52px] h-[52px] mr-4">
                 STUDENT
             </button>
 
             <!-- Professional Button (Can trigger a different modal) -->
-            <button class="flex items-center justify-center w-[360px] h-[76px] bg-white text-blue-900 text-[32px] font-bold rounded-2xl shadow-md">
+            <button class="flex items-center justify-center w-[360px] h-[76px] bg-maincolor text-hover text-[32px] font-bold rounded-2xl shadow-md">
                 <img src="{{ asset('img/ProfessionalLogo.png') }}" alt="Professional Icon" class="w-[52px] h-[52px] mr-4">
                 PROFESSIONAL
             </button>
