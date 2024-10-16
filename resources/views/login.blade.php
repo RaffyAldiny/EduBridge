@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class="relative h-screen text-maincolor font-poppins p-4">
+<body class="relative h-screen text-maincolor font-poppins">
     {{-- @extends('layouts.floatingorbs') --}}
     @livewireScripts
     <livewire:header/>
@@ -17,19 +17,19 @@
     <!-- Main Content -->
     <div class="flex flex-col items-center">
         <h1 class="text-white text-3xl md:text-7xl font-bold text-center mb-8 mt-8">
-            Connecting You to Expert <br> Solutions for Academic <br> Success
+            Connecting You to Expert <span class="block mt-4">Solutions for Academic</span> <span class="block mt-4">Success</span>
         </h1>
         <!-- Button Section -->
-        <div class="flex space-x-6">
+        <div class="flex space-x-[68px] mt-4">
             <!-- Student Button -->
-            <button class="flex items-center bg-white text-blue-900 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-500 hover:text-white transition duration-300">
-                <img src="student-icon.png" alt="Student Icon" class="w-6 h-6 mr-2">
+            <button class="flex items-center justify-center w-[360px] h-[76px] bg-white text-blue-900 text-[32px] font-bold rounded-2xl shadow-md">
+                <img src="{{ asset('img/StudentLogo.png') }}" alt="Student Icon" class="w-[52px] h-[52px] mr-4"> <!-- Increased icon size -->
                 STUDENT
             </button>
 
             <!-- Professional Button -->
-            <button class="flex items-center bg-white text-blue-900 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-500 hover:text-white transition duration-300">
-                <img src="professional-icon.png" alt="Professional Icon" class="w-6 h-6 mr-2">
+            <button class="flex items-center justify-center w-[360px] h-[76px] bg-white text-blue-900 text-[32px] font-bold rounded-2xl shadow-md">
+                <img src="{{ asset('img/ProfessionalLogo.png') }}" alt="Professional Icon" class="w-[52px] h-[52px] mr-4"> <!-- Increased icon size -->
                 PROFESSIONAL
             </button>
         </div>
