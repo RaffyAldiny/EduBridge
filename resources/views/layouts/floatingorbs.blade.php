@@ -24,22 +24,6 @@
   <!-- Floating Orbs Container -->
   <div x-ref="orbContainer" class="fixed inset-0 z-0 pointer-events-none"></div>
 
-  <!-- Main Content -->
-  <main class="relative z-10">
-    <div class="relative z-50">
-      <!-- Dropdown Menu (make sure it stays above the orbs) -->
-      <div class="absolute top-16 left-8 w-40 text-center text-l bg-blue-100 text-black rounded-lg shadow-lg z-50">
-        <ul class="p-2 space-y-2">
-          <li><a href="{{ url('/') }}"><button class="text-black w-full px-2 py-2 bg-blue-100 hover:bg-blue-200 rounded">Home</button></a></li>
-          <li><a href="{{ url('/about') }}"><button class="text-black w-full px-2 py-2 bg-blue-100 hover:bg-blue-200 rounded">About Us</button></a></li>
-          <li><a href="{{ url('/contact') }}"><button class="text-black w-full px-2 py-2 bg-blue-100 hover:bg-blue-200 rounded">Contact Us</button></a></li>
-        </ul>
-      </div>
-    </div>
-    
-    @yield('content')
-  </main>
-
   <!-- Floating Orbs Alpine.js Script -->
   <script>
     function floatingOrbs() {
