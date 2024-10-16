@@ -8,8 +8,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'maincolor':'#c4eaf7',
-        'hover':'#0b263b',
+        'maincolor': '#c4eaf7',
+        'hover': '#0b263b',
+      },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
       },
     },
   },
