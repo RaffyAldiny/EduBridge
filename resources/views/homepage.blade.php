@@ -10,21 +10,25 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
   <title>EduBridge</title>
-
 </head>
-<body class="bg-gradient-to-r from-blue-900 to-blue-800 text-white min-h-screen">
-  <livewire:header />
+<body class="relative h-screen text-maincolor p-4">
 
+  <!-- Separate Background Div using Tailwind CSS classes -->
+  <div class="absolute inset-0 bg-cover bg-center z-[-1]" style="background-image: url('{{ asset('img/edubridgebg.png') }}');"></div>
+  @extends('layouts.floatingorbs')
+  <livewire:header />
   @livewireScripts
 
-<main class="flex items-center justify-center h-screen">
-  <div class="flex flex-col text-center space-y-8">
-    <h2 class="text-4xl font-extrabold">Connecting You to Expert Solutions for Academic Success</h2>
-    <div class="w-64 h-64 mx-auto">
-      <img src="{{ asset('img/edubridgelogo.png') }}" alt="EduBridge Logo" class="rounded-full">
+  <!-- Main Content Section -->
+  <main class="flex justify-center h-screen">
+    <div class="flex flex-row items-center w-full pl-12">
+      <!-- add shadow: style="text-shadow: 4px 8px 8px rgba(0, 0, 0, 0.7); -->
+    <h2 class="w-1/2 text-[84px] font-extrabold -mt-56 tracking-wider">
+      Connecting You to Expert Solutions for Academic Success</h2>
+      <div class="w-1/2 flex justify-center -mt-56">
+        <img src="{{ asset('img/edubridgelogo.png') }}" alt="EduBridge Logo" class="z-1 rounded-full w-3/4 h-3/4">
+      </div>
     </div>
-  </div>
-</main>
-
+  </main>
 </body>
 </html>

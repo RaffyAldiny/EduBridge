@@ -6,7 +6,12 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'maincolor':'#c4eaf7',
+        'hover':'#0b263b',
+      },
+    },
   },
   plugins: [],
 }
