@@ -10,7 +10,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <!-- Main View (e.g., login.blade.php) -->
-<body class="relative h-screen text-maincolor font-poppins" x-data="{ showModal: false, isLogin: true }">
+<body class="relative h-screen text-maincolor font-poppins" x-data="{ showStudentModal: false, showProfessionalModal: false, isLogin: true }">
     <livewire:header />
 
     <!-- Main Content -->
@@ -21,14 +21,19 @@
         <!-- Button Section -->
         <div class="flex space-x-[68px] mt-4">
             <!-- Student Button -->
-            <button class="flex items-center justify-center w-[360px] h-[76px] bg-maincolor text-hover text-[32px] font-bold rounded-2xl shadow-md"
-                @click="showModal = true; isLogin = true">
+            <button
+                class="flex items-center justify-center w-[360px] h-[76px] bg-maincolor text-hover text-[32px] font-bold rounded-2xl shadow-md"
+                @click="showStudentModal = true; isLogin = true"
+            >
                 <img src="{{ asset('img/StudentLogo.png') }}" alt="Student Icon" class="w-[52px] h-[52px] mr-4">
                 STUDENT
             </button>
 
-            <!-- Professional Button (Can trigger a different modal) -->
-            <button class="flex items-center justify-center w-[360px] h-[76px] bg-maincolor text-hover text-[32px] font-bold rounded-2xl shadow-md">
+            <!-- Professional Button -->
+            <button
+                class="flex items-center justify-center w-[360px] h-[76px] bg-maincolor text-hover text-[32px] font-bold rounded-2xl shadow-md"
+                @click="showProfessionalModal = true; isLogin = true"
+            >
                 <img src="{{ asset('img/ProfessionalLogo.png') }}" alt="Professional Icon" class="w-[52px] h-[52px] mr-4">
                 PROFESSIONAL
             </button>
@@ -37,6 +42,7 @@
 
     <!-- Student Login-Signup Modal -->
     <livewire:studentlogin />
+    <livewire:professionallogin />
 
     @livewireScripts
 </body>
