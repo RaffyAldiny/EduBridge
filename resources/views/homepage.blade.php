@@ -18,9 +18,9 @@
 
   <!-- Main Content Section -->
   <main class="flex justify-center h-3/4">
-    <div class="flex flex-row items-center w-full pl-12">
+    <div class="flex flex-row items-center w-full">
       <!-- add shadow: style="text-shadow: 4px 8px 8px rgba(0, 0, 0, 0.7); -->
-    <h2 class="w-1/2 text-[84px] font-extrabold tracking-wider">
+    <h2 class="w-1/2 text-[84px] font-bold pl-24">
       Connecting You to Expert Solutions for Academic Success</h2>
       <div class="w-1/2 flex justify-center">
         <img src="{{ asset('img/edubridgelogo.png') }}" alt="EduBridge Logo" class="z-1 rounded-full w-3/4 h-3/4">
