@@ -11,6 +11,7 @@
 </head>
 <!-- Main View (e.g., login.blade.php) -->
 <body class="relative h-screen text-maincolor font-poppins" x-data="{ showStudentModal: false, showProfessionalModal: false, isLogin: true }">
+
     <livewire:header />
 
     <!-- Main Content -->
@@ -22,7 +23,7 @@
         <div class="flex space-x-[68px] mt-4">
             <!-- Student Button -->
             <button
-                class="flex items-center justify-center w-[360px] h-[76px] bg-maincolor text-hover text-[32px] font-bold rounded-2xl shadow-md"
+                class="flex items-center justify-center w-[360px] h-[76px] bg-maincolor text-hover text-[32px] font-bold rounded-2xl shadow-md hover:bg-yellow-400"
                 @click="showStudentModal = true; isLogin = true"
             >
                 <img src="{{ asset('img/StudentLogo.png') }}" alt="Student Icon" class="w-[52px] h-[52px] mr-4">
@@ -31,7 +32,7 @@
 
             <!-- Professional Button -->
             <button
-                class="flex items-center justify-center w-[360px] h-[76px] bg-maincolor text-hover text-[32px] font-bold rounded-2xl shadow-md"
+                class="flex items-center justify-center w-[360px] h-[76px] bg-maincolor text-hover text-[32px] font-bold rounded-2xl shadow-md hover:bg-yellow-400"
                 @click="showProfessionalModal = true; isLogin = true"
             >
                 <img src="{{ asset('img/ProfessionalLogo.png') }}" alt="Professional Icon" class="w-[52px] h-[52px] mr-4">
