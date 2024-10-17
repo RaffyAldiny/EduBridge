@@ -14,10 +14,12 @@
   <title>EduBridge</title>
 </head>
 
-<body class="relative h-screen text-maincolor bg-red-500 font-poppins">
+<body class="relative h-screen text-maincolor bg-gray-100 font-poppins">
   @livewireScripts
-  <livewire:header />
+
+  <!-- Sticky Header Section -->    <livewire:header />
   
+  <!-- Main Content -->
   <main class="flex flex-col h-full px-5">
     <div class="flex h-full items-center justify-between w-full">
       
@@ -38,6 +40,25 @@
           We created this website with the hopes of making the lives of students easier while giving our professors 
           a chance to teach and earn an additional income at the comfort of their home.
         </span>
+      </div>
+    </div>
+
+    <!-- Vision and Mission Section -->
+    <div class="flex flex-col text-center mt-9 py-16 space-y-12 text-maincolor">
+      <!-- Vision -->
+      <div>
+        <h2 class="font-bold text-5xl">VISION</h2>
+        <p class="mt-4 text-2xl leading-relaxed max-w-4xl mx-auto">
+          To be the leading online platform that bridges the gap between students and professionals, empowering students with personalized guidance and expertise to achieve academic excellence and career success.
+        </p>
+      </div>
+
+      <!-- Mission -->
+      <div>
+        <h2 class="font-bold text-5xl">MISSION</h2>
+        <p class="mt-4 text-2xl leading-relaxed max-w-4xl mx-auto">
+          EduBridge aims to connect students with a diverse range of skilled professionals, providing accessible and affordable one-on-one support in specialized fields like statistics, psychometrics, accounting, and more. We strive to foster a community where students can gain practical insights, enhance their academic performance, and develop the skills needed to excel in their chosen careers.
+        </p>
       </div>
     </div>
   </main>
