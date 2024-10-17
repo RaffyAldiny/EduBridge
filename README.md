@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="200" src="https://github.com/user-attachments/assets/ac5897b8-a31c-47d5-ad73-310dd68ab49b" alt="EduBridge Logo">
+  <img width="300" src="https://github.com/user-attachments/assets/ac5897b8-a31c-47d5-ad73-310dd68ab49b" alt="EduBridge Logo">
 </p>
 
 <h1 align="center">EduBridge</h1>
