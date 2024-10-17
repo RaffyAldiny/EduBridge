@@ -14,6 +14,10 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/contactus', function () {
+    return view('contactus');
+});
+
 Route::get('/student', function () {
     return view('student');
 });
