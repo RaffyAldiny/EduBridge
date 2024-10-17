@@ -20,13 +20,12 @@
         </div>
 
         <!-- Login Form -->
-        <form x-show="isLogin" class="space-y-1">
+        <form x-show="isLogin" action="{{ url('/student') }}" method="GET" class="space-y-1">
             <!-- Username -->
             <div class="mb-[2px]">
                 <input type="text" class="mt-1 w-full p-[2px] placeholder-hover border-[2px] border-hover rounded-[2px] focus:border-yellow-500 focus:outline-none" placeholder="Username">
             </div>
             
-
             <!-- Password -->
             <div class="mb-1">
                 <input type="password" class=" w-full p-[2px] placeholder-hover border-hover border-[2px] rounded-[2px] text-hover focus:border-yellow-500 focus:outline-none" placeholder="Password">
@@ -43,6 +42,7 @@
                 <button type="button" @click="showStudentModal = false" class="bg-[#c4eaf7] text-hover text-[18px] h-[36px] font-bold border-hover border-[1px] px-1 py-1 rounded-[4px] w-[130px] hover:border-0 hover:bg-yellow-500 hover:text-maincolor">CANCEL</button>
             </div>
         </form>
+
 
         <!-- Sign-up Form -->
         <form x-show="!isLogin" class="space-y-1">
