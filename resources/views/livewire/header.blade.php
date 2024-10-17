@@ -62,9 +62,11 @@
                     </a>
                 </li>
                 <li>
-                    <button class="w-full pb-2 bg-maincolor hover:font-bold rounded" :class="{ 'font-bold': currentPage.includes('contact') }">
+                <a href="{{ url('/contactus') }}">
+                    <button class="w-full pb-2 bg-maincolor text-black hover:font-bold rounded" :class="{ 'font-bold': currentPage.includes('contact') }">
                         Contact Us
                     </button>
+                </a>
                 </li>
             </ul>
         </div>
