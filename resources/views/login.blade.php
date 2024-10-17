@@ -10,7 +10,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <!-- Main View (e.g., login.blade.php) -->
-<body class="relative h-screen text-maincolor font-poppins" x-data="{ showStudentModal: false, showProfessionalModal: false, isLogin: true }">
+<body class="relative h-screen text-maincolor font-poppins" x-data="{ showStudentModal: false, showProfessionalModal: false }">
 
     <livewire:header />
 
@@ -23,8 +23,9 @@
         <div class="flex space-x-[68px] mt-4">
             <!-- Student Button -->
             <button
-                class="flex items-center justify-center w-[360px] h-[76px] bg-maincolor text-hover text-[32px] font-bold rounded-2xl shadow-md hover:bg-yellow-400"
-                @click="showStudentModal = true; isLogin = true"
+                @click="showStudentModal = true"
+                :class="[showStudentModal ? 'bg-yellow-400' : 'bg-maincolor hover:bg-yellow-400']"
+                class="flex items-center justify-center w-[360px] h-[76px] text-hover text-[32px] font-bold rounded-2xl shadow-md"
             >
                 <img src="{{ asset('img/StudentLogo.png') }}" alt="Student Icon" class="w-[52px] h-[52px] mr-4">
                 STUDENT
@@ -32,8 +33,9 @@
 
             <!-- Professional Button -->
             <button
-                class="flex items-center justify-center w-[360px] h-[76px] bg-maincolor text-hover text-[32px] font-bold rounded-2xl shadow-md hover:bg-yellow-400"
-                @click="showProfessionalModal = true; isLogin = true"
+                @click="showProfessionalModal = true"
+                :class="[showProfessionalModal ? 'bg-yellow-400' : 'bg-maincolor hover:bg-yellow-400']"
+                class="flex items-center justify-center w-[360px] h-[76px] text-hover text-[32px] font-bold rounded-2xl shadow-md"
             >
                 <img src="{{ asset('img/ProfessionalLogo.png') }}" alt="Professional Icon" class="w-[52px] h-[52px] mr-4">
                 PROFESSIONAL
@@ -47,5 +49,4 @@
 
     @livewireScripts
 </body>
-
 </html>
