@@ -79,7 +79,7 @@
         </span> 
         <button class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
         <img src="{{ asset('img/AccountantLogo.png') }}" alt="STATISTICIAN Icon" class="w-14 h-14 mr-4">
-            <span class="text-hover">ACCOUNTANT</span>
+            <span class="text-hover">ACCOUNTANT</span >
           </button>
         </div>
     </div>
