@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
     <title>Edubridge Login</title>
     <meta charset="utf-8">
@@ -11,7 +12,6 @@
 </head>
 <!-- Main View (e.g., login.blade.php) -->
 <body class="relative h-screen text-maincolor font-poppins" x-data="{ showStudentModal: false, showProfessionalModal: false }">
-
     <livewire:header />
 
     <!-- Main Content -->

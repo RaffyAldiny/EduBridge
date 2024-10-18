@@ -1,5 +1,4 @@
 <div class="relative p-4">
-    <!-- Sticky background image -->
     <div class="fixed inset-0 bg-cover bg-center z-[-1]" style="background-image: url('{{ asset('img/edubridgebg.png') }}');"></div>
     
     <div x-data="{ isOpen: false, currentPage: window.location.pathname }" class="relative flex items-center justify-between px-8 z-50 py-4">
@@ -29,7 +28,7 @@
         </div>
 
         <a href="{{ url('/login') }}">
-            <button class="text-maincolor px-4 py-2 hover:bg-maincolor hover:border-hover hover:text-hover border-2 text-sm font-bold border-maincolor rounded-lg">L O G I N</button>
+            <button class="text-maincolor px-4 py-2 hover:bg-maincolor hover:border-hover hover:text-hover border-2 text-sm font-bold border-maincolor rounded-lg duration-200 ease-in">L O G I N</button>
         </a>
         
         
