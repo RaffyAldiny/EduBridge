@@ -29,7 +29,7 @@
       feedback, or need assistance, our team is here to help. Reach out to us through any of the following methods:
       </span>
       <!-- Contact Information -->
-      <div class="mt-8 text-2xl space-y-4 leading-loose">
+      <div class="mt-8 text-2xl space-y-4 ml-10 leading-loose">
         <div class="flex items-center">
           <i class="fa fa-phone text-xl mr-2"></i>
           <span class="font-bold">Telephone:</span>
