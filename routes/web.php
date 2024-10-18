@@ -21,3 +21,7 @@ Route::get('/contactus', function () {
 Route::get('/student', function () {
     return view('student');
 });
+
+Route::get('/studentpreference', function () {
+    return view('studentpreference');
+});
