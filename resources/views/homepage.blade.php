@@ -11,7 +11,7 @@
 
   <title>EduBridge</title>
 </head>
-<body class="relative h-screen text-maincolor">
+<body class="relative h-screen text-maincolor font-poppins">
   @extends('layouts.floatingorbs')
   <livewire:header />
   @livewireScripts

@@ -2,8 +2,8 @@
     <!-- Sticky background image -->
     <div class="fixed inset-0 bg-cover bg-center z-[-1]" style="background-image: url('{{ asset('img/edubridgebg.png') }}');"></div>
     
-    <div x-data="{ isOpen: false, currentPage: window.location.pathname }" class="relative flex items-center justify-between px-8 py-4">
-        <div class="flex items-center space-x-2">
+    <div x-data="{ isOpen: false, currentPage: window.location.pathname }" class="relative flex items-center justify-between px-8 z-50 py-4">
+        <div class="flex items-center space-x-2 relative">
             <button 
                 @click="isOpen = !isOpen" 
                 class="focus:outline-none relative w-10 h-14 flex items-center justify-center rounded-md"
@@ -11,7 +11,7 @@
             >
             <!-- Hamburger icon -->
                 <template x-if="!isOpen">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-maincolor" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-maincolor" fill="none" viewBox="0 0 24 24" stroke="CurrentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </template>
@@ -25,13 +25,13 @@
                     </svg>
                 </template>
             </button>
-
-            <h1 class="text-2xl mt-2 font-bold text-maincolor">EduBridge</h1>
+            <span class="text-2xl font-extrabold text-maincolor">EduBridge</span>
         </div>
 
         <a href="{{ url('/login') }}">
-            <button class="text-maincolor px-4 py-2 hover:bg-yellow-400 hover:border-hover hover:text-hover border-2 text-sm font-bold border-maincolor rounded-lg">L O G I N</button>
+            <button class="text-maincolor px-4 py-2 hover:bg-maincolor hover:border-hover hover:text-hover border-2 text-sm font-bold border-maincolor rounded-lg">L O G I N</button>
         </a>
+        
         
         <!-- Dropdown menu -->
         <div 
