@@ -35,14 +35,13 @@
           }
         },
         createOrb() {
-          const size = Math.random() * 80 + 40; // Randomized size between 40px and 120px
+          const size = Math.random() * 80 + 40; 
           const orb = document.createElement('div');
           orb.classList.add('orb');
           orb.style.width = `${size}px`;
           orb.style.height = `${size}px`;
           
-          // Use the RGB equivalent of #c4eaf7 with full opacity
-          orb.style.backgroundColor = 'rgba(196, 234, 247, 0.75)';
+          orb.style.backgroundColor = 'rgba(196, 234, 247, 0.50)';
 
           // Randomized position for each orb, ensuring spread-out positions
           orb.style.top = `${Math.random() * 90}vh`;
