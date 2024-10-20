@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.2/dist/cdn.min.js"></script>
-
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <title>EduBridge</title>
 </head>
 
@@ -33,7 +33,7 @@
         <img src="{{ asset('img/DataAnalystLogo.png') }}" alt="Data Analyst Icon" class="w-14 h-14 mr-4">
         <span class="text-hover">DATA ANALYST</span> 
     </a>
-    <span class="text-hover">
+    <span class="text-hover text-transparent">
         filler space fgdg
     </span> 
     <button class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
@@ -48,7 +48,7 @@
     <img src="{{ asset('img/EditorLogo.png') }}" alt="EDITORS Icon" class="w-14 h-14 mr-4">
         <span class="text-hover">EDITORS/LINGUISTS</span>
       </button>
-    <span class="text-hover">
+    <span class="text-hover text-transparent">
         filler space fgdg
     </span> 
     <button class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
@@ -63,7 +63,7 @@
     <img src="{{ asset('img/EthicistLogo.png') }}" alt="ETHICIST Icon" class="w-14 h-14 mr-4">
         <span class="text-hover">ETHICIST</span>
       </button>
-    <span class="text-hover">
+    <span class="text-hover text-transparent">
         filler space fgdg
     </span> 
     <button class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
@@ -78,7 +78,7 @@
     <img src="{{ asset('img/MethodologistLogo.png') }}" alt="ETHICIST Icon" class="w-14 h-14 mr-4">
         <span class="text-hover">METHODOLOGIST</span>
       </button>
-    <span class="text-hover">
+    <span class="text-hover text-transparent">
         filler space fgdg
     </span> 
     <button class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
