@@ -31,7 +31,7 @@
     <div class="flex flex-row justify-center mx-4">
     <a href="{{ url('/DataAnalystList') }}" class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
         <img src="{{ asset('img/DataAnalystLogo.png') }}" alt="Data Analyst Icon" class="w-14 h-14 mr-4">
-        <span class="text-black">DATA ANALYST</span> <!-- Adjust text color for hover -->
+        <span class="text-hover">DATA ANALYST</span> 
     </a>
     <span class="text-hover">
         filler space fgdg
