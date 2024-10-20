@@ -10,6 +10,7 @@ export default {
       colors: {
         'maincolor': '#c4eaf7',
         'hover': '#0b263b',
+        'whitehover' : '#dbeafe',
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],

@@ -10,9 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    @include('layouts.fadeanimation')
 </head>
-<!-- Main View (e.g., login.blade.php) -->
-<body class="relative h-screen text-maincolor font-poppins" x-data="{ showStudentModal: false, showProfessionalModal: false }">
+<body class="relative h-screen text-maincolor font-poppins fade-in" 
+      x-data="{ showStudentModal: false, showProfessionalModal: false }"
+      x-init="$el.classList.add('fade-in-visible')">
+    
     <livewire:header />
 
     <!-- Main Content -->
@@ -25,7 +28,7 @@
             <!-- Student Button -->
             <button
                 @click="showStudentModal = true"
-                :class="[showStudentModal ? 'bg-yellow-400' : 'bg-maincolor hover:bg-yellow-400']"
+                :class="[showStudentModal ? 'bg-blue-100' : 'bg-maincolor  hover:bg-whitehover duration-150 ']"
                 class="flex items-center justify-center w-[360px] h-[76px] text-hover text-[32px] font-bold rounded-2xl shadow-md"
             >
                 <img src="{{ asset('img/StudentLogo.png') }}" alt="Student Icon" class="w-[52px] h-[52px] mr-4">
@@ -35,7 +38,7 @@
             <!-- Professional Button -->
             <button
                 @click="showProfessionalModal = true"
-                :class="[showProfessionalModal ? 'bg-yellow-400' : 'bg-maincolor hover:bg-yellow-400']"
+                :class="[showProfessionalModal ? 'bg-yellow-400' : 'bg-maincolor   hover:bg-whitehover duration-150']"
                 class="flex items-center justify-center w-[360px] h-[76px] text-hover text-[32px] font-bold rounded-2xl shadow-md"
             >
                 <img src="{{ asset('img/ProfessionalLogo.png') }}" alt="Professional Icon" class="w-[52px] h-[52px] mr-4">

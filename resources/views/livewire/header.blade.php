@@ -28,7 +28,7 @@
         </div>
 
         <a href="{{ url('/login') }}">
-            <button class="text-maincolor px-4 py-2 hover:bg-maincolor hover:border-hover hover:text-hover border-2 text-sm font-bold border-maincolor rounded-lg duration-200 ease-in">L O G I N</button>
+            <button class="text-maincolor px-4 py-2 hover:bg-whitehover hover:border-hover hover:text-hover border-2 text-sm font-bold border-maincolor rounded-lg duration-200 ease-in">L O G I N</button>
         </a>
         
         

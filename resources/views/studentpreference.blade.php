@@ -12,6 +12,8 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.2/dist/cdn.min.js"></script>
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <title>EduBridge</title>
+  @include('layouts.fadeanimation')
+
 </head>
 
 <body class="relative h-screen text-maincolor bg-gray-100 font-poppins">
