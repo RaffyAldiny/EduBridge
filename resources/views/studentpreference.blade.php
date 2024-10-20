@@ -17,6 +17,7 @@
   @livewireScripts
   @extends('layouts.floatingorbs')
  <livewire:header />
+
  <!-- Main Content -->
 <main class="flex flex-col px-5">
  <div class="flex flex-row">
@@ -28,10 +29,10 @@
  <div class="mt-3 flex flex-col">
     <!--first row-->
     <div class="flex flex-row justify-center mx-4">
-        <button class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
-            <img src="{{ asset('img/DataAnalystLogo.png') }}" alt="Data Analyst Icon" class="w-14 h-14 mr-4">
-                <span class="text-hover">DATA ANALYST</span>
-        </button>
+    <a href="{{ url('/DataAnalystList') }}" class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
+        <img src="{{ asset('img/DataAnalystLogo.png') }}" alt="Data Analyst Icon" class="w-14 h-14 mr-4">
+        <span class="text-black">DATA ANALYST</span> <!-- Adjust text color for hover -->
+    </a>
     <span class="text-hover">
         filler space fgdg
     </span> 

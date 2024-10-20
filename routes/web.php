@@ -25,3 +25,7 @@ Route::get('/student', function () {
 Route::get('/studentpreference', function () {
     return view('studentpreference');
 });
+
+Route::get('/DataAnalystList', function () {
+    return view('DataAnalystList');
+});

@@ -41,7 +41,8 @@
           orb.style.width = `${size}px`;
           orb.style.height = `${size}px`;
           
-          orb.style.backgroundColor = 'rgba(196, 234, 247, 0.50)';
+          // maincolor: orb.style.backgroundColor = 'rgba(196, 234, 247, 0.50)';
+          orb.style.backgroundColor = 'rgba(255, 255, 255, 0.25)';
 
           // Randomized position for each orb, ensuring spread-out positions
           orb.style.top = `${Math.random() * 90}vh`;
