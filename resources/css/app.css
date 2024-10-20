@@ -2,3 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Floating animation */
+@keyframes float-in {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply this class to elements you want to float in */
+  .float-in {
+    opacity: 0;
+    animation: float-in 1.2s ease-out forwards; /* Adjust duration as needed */
+  }
+  

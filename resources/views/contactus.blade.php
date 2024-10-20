@@ -27,24 +27,24 @@
     <div class="flex h-full items-center justify-between w-full">
       <!-- Text Section -->
       <div class="w-full h-full flex flex-col px-4">
-        <span class="font-bold text-left text-7xl pb-4">CONTACT US</span>
-        <span class="text-left text-3xl tracking-wider">
+        <span class="font-bold text-left text-7xl pb-4 float-in">CONTACT US</span>
+        <span class="text-left text-3xl tracking-wider float-in">
         We'd love to hear from you! Whether you have a question, 
         feedback, or need assistance, our team is here to help. Reach out to us through any of the following methods:
         </span>
         <!-- Contact Information -->
         <div class="mt-8 text-2xl space-y-4 ml-10 leading-loose">
-          <div class="flex items-center">
+          <div class="flex items-center float-in">
             <i class="fa fa-phone text-xl mr-2"></i>
             <span class="font-bold">Telephone:</span>
             <span class="ml-2">+639 7159 2265</span>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center float-in">
             <i class="fa fa-envelope text-xl mr-2"></i>
             <span class="font-bold">Email:</span>
             <a href="mailto:EduBridge2024@gmail.com" class="ml-2 text-maincolor underline">EduBridge2024@gmail.com</a>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center float-in">
             <i class="fa fa-map-marker text-xl mr-2"></i>
             <span class="font-bold">Address:</span>
             <span class="ml-2 underline">Gen. Luna cor. Muralla St., Intramuros Manila, Philippines 1002</span>

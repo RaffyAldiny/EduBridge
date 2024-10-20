@@ -21,13 +21,13 @@
   <livewire:header />
 
   <main class="flex flex-col px-5">
-    <div class="flex flex-row items-center mb-6">
+    <div class="flex flex-row items-center mb-6 float-in">
       <img src="{{ asset('img/StudentLogo.png') }}" alt="Student Icon" class="w-14 h-14 -mt-3 -pt-1 rounded-full bg-maincolor p-2">
       <span class="font-bold pl-2 text-left text-2xl pb-4 mt-2 pt-1">Lists of Data Analyst Professionals</span>
     </div>
 
     <!-- List of Professionals -->
-    <div class="bg-gray-900 p-6 mx-5 rounded-xl shadow-md">
+    <div class="bg-gray-900 p-6 mx-5 rounded-xl shadow-md float-in">
       <!-- List Item -->
       <div class="flex items-center justify-between py-4 border-b border-gray-700">
         <div class="flex items-center">

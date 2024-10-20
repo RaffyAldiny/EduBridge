@@ -23,16 +23,16 @@
 
  <!-- Main Content -->
 <main class="flex flex-col px-5">
- <div class="flex flex-row">
+ <div class="flex flex-row float-in">
     <img src="{{ asset('img/StudentLogo.png') }}" alt="Student Icon" class="w-14 h-14 rounded-full bg-maincolor p-2">
     <span class="font-bold pl-2 text-left text-2xl pb-4 mt-2 pt-1">SELECT YOUR PREFERENCE ...</span>
  </div>
 
  <!--profession-->
- <div class="mt-3 flex flex-col">
+ <div class="mt-3 flex flex-col float-in">
     <!--first row-->
     <div class="flex flex-row justify-center mx-4">
-    <a href="{{ url('/studentpreference/dataanalyst') }}" class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
+    <a href="{{ url('/studentpreference/dataanalyst') }}" class="flex items-center justify-start bg-maincolor  text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
         <img src="{{ asset('img/DataAnalystLogo.png') }}" alt="Data Analyst Icon" class="w-14 h-14 mr-4">
         <span class="text-hover">DATA ANALYST</span> 
     </a>
