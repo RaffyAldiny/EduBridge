@@ -40,7 +40,7 @@
           <span class="text-hover">PSYCHOMETRICIAN</span>
         </button>
       </div>
-
+      
       <!--second row-->
       <div class="flex flex-row justify-center mx-4 mt-3">
       <button class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
