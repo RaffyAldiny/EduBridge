@@ -26,6 +26,6 @@ Route::get('/studentpreference', function () {
     return view('studentpreference');
 });
 
-Route::get('/DataAnalystList', function () {
+Route::get('/studentpreference/dataanalyst', function () {
     return view('DataAnalystList');
 });
