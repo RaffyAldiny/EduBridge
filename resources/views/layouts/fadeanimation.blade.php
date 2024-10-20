@@ -11,7 +11,7 @@
         z-index: 1000; /* High z-index to ensure it is on top */
         opacity: 0.6; /* Start with full opacity */
         pointer-events: none; /* Prevent the overlay from blocking clicks */
-        transition: opacity 0.4s ease-in-out;
+        transition: opacity 0.8s ease-in-out;
     }
 
     .fade-overlay.fade-out {

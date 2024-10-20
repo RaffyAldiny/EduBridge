@@ -10,28 +10,41 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.2/dist/cdn.min.js"></script>
-   @include('layouts.fadeanimation')
+  @include('layouts.fadeanimation')
 
   <style>
-    html {
-      scroll-snap-type: y mandatory;
+    html, body {
       height: 100%;
-      overflow: hidden; 
-    }
-    
-    body {
-      overflow-y: auto; 
-      height: 100%;
+      overflow-x: hidden;
     }
 
     section {
-      scroll-snap-align: start;
       height: 100vh;
       display: flex;     
       align-items: center;
       justify-content: center;
     }
-    
+
+    /* About Us Section */
+    .about-us-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 50px;
+    }
+
+    .about-us-text {
+      flex: 1;
+      padding-left: 50px;
+    }
+
+    .about-us-image {
+      flex: 1;
+      max-width: 500px;
+      border-radius: 12px;
+    }
+
     #scroll-down-button {
       position: absolute;
       bottom: 20px; 
@@ -49,50 +62,66 @@
         transform: translateX(-50%) translateY(-10px);
       }
     }
+
+    /* Fade-in animation for text and image */
+    .animate {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .animate.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
   </style>
 
   <title>EduBridge</title>
 </head>
 
-<body class="relative h-screen text-maincolor font-poppins">
+<body class="text-maincolor font-poppins">
   @livewireScripts
   <livewire:header />
   @extends('layouts.floatingorbs')
 
-  <main class="flex flex-col h-full px-5">
-    <section class="flex h-screen w-full pt-3">
-      <div class="flex w-1/2">
-        <img src="{{ asset('img/edubridgeteam.png') }}" alt="About Us Photo" class="rounded-xl z-10 object-cover">
-      </div>
+  <main class="px-3">
+    <!-- About Us Section -->
+    <section class="h-screen w-full">
+      <div class="about-us-content">
+        <div class="animate" id="about-us-image">
+          <img src="{{ asset('img/edubridgeteam.png') }}" alt="About Us Photo" class="rounded-0 about-us-image object-cover">
+        </div>
       
-      <div class="w-3/4 h-full flex flex-col justify-start">
-        <span class="font-bold text-right text-7xl pb-4">ABOUT US</span>
-        <span class="text-right text-2xl leading-tight pl-10">
-          EduBridge is an online platform that offers various professional academic desk services to students, 
-          including tutoring, proofreading, statistical analysis, psychometric evaluations, and artistic support. 
-          On the platform, qualified experts are categorized based on their areas of expertise to make it easier for 
-          students to connect with professionals according to their needs.<br><br>
+        <div class="about-us-text animate text-right" id="about-us-desc">
+          <span class="font-bold text-7xl pb-4 d-block">ABOUT US</span>
+          <span class="text-2xl leading-tight">
+            EduBridge is an online platform that offers various professional academic desk services to students, 
+            including tutoring, proofreading, statistical analysis, psychometric evaluations, and artistic support. 
+            On the platform, qualified experts are categorized based on their areas of expertise to make it easier for 
+            students to connect with professionals according to their needs.<br><br>
 
-          We created this website with the hopes of making the lives of students easier while giving our professors 
-          a chance to teach and earn an additional income at the comfort of their home.
-        </span>
+            We created this website with the hopes of making the lives of students easier while giving our professors 
+            a chance to teach and earn an additional income at the comfort of their home.
+          </span>
+        </div>
       </div>
     </section>
 
+
+    <div class="mt-16 h-[1px] w-5/6 bg-whitehover mx-auto opacity-30"></div>
+
     <!-- Vision and Mission Section -->
-    <section id="vision-mission" class="flex flex-col text-center py-32 space-y-12 text-maincolor h-screen">
-      <!-- Vision -->
+    <section id="vision-mission" class="flex flex-col mt-[-40px] text-center py-16 space-y-12 text-maincolor h-screen">
       <div>
-        <h2 class="font-bold text-5xl">VISION</h2>
-        <p class="mt-4 text-2xl leading-tight mx-28">
+        <h2 class="font-bold text-5xl animate" id="vision-text">VISION</h2>
+        <p class="mt-4 text-2xl leading-tight mx-28 animate" id="vision-desc">
           To be the leading online platform that bridges the gap between students and professionals, empowering students with personalized guidance and expertise to achieve academic excellence and career success.
         </p>
       </div>
 
-      <!-- Mission -->
       <div>
-        <h2 class="font-bold text-5xl">MISSION</h2>
-        <p class="mt-4 text-2xl leading-tight mx-28">
+        <h2 class="font-bold text-5xl animate" id="mission-text">MISSION</h2>
+        <p class="mt-4 text-2xl leading-tight mx-28 animate" id="mission-desc">
           EduBridge aims to connect students with a diverse range of skilled professionals, providing accessible and affordable one-on-one support in specialized fields like statistics, psychometrics, accounting, and more. We strive to foster a community where students can gain practical insights, enhance their academic performance, and develop the skills needed to excel in their chosen careers.
         </p>
       </div>
@@ -110,6 +139,25 @@
     function scrollToSection() {
       document.getElementById('vision-mission').scrollIntoView({ behavior: 'smooth' });
     }
+
+    // Function to trigger animations on elements that come into view
+    function animateOnScroll(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }
+
+    // Set up the observer
+    const observer = new IntersectionObserver(animateOnScroll, {
+      threshold: 0.1  // Trigger when 10% of the element is visible
+    });
+
+    // Target all elements with the "animate" class for the scroll animation
+    document.querySelectorAll('.animate').forEach(element => {
+      observer.observe(element);
+    });
   </script>
 </body>
 </html>

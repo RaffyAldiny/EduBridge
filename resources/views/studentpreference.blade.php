@@ -19,7 +19,7 @@
 <body class="relative h-screen text-maincolor bg-gray-100 font-poppins">
   @livewireScripts
   @extends('layouts.floatingorbs')
- <livewire:header />
+ <livewire:headertwo />
 
  <!-- Main Content -->
 <main class="flex flex-col px-5">
