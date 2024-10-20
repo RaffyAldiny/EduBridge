@@ -17,6 +17,6 @@
   /* Apply this class to elements you want to float in */
   .float-in {
     opacity: 0;
-    animation: float-in 1.2s ease-out forwards; /* Adjust duration as needed */
+    animation: float-in 0.6s ease-out forwards; /* Adjust duration as needed */
   }
   

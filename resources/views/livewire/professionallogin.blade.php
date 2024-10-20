@@ -9,12 +9,12 @@
 
         <!-- Toggle between Login and Signup with active underline animation -->
         <div class="flex justify-center space-x-8 mb-2 text-[18px]">
-            <a href="#" @click="isLogin = true"
-               :class="isLogin ? 'font-bold text-[#0C3A5E] border-b-2 border-[#0C3A5E] pb-1 no-underline ' : 'text-hover no-underline hover:text-yellow-600'">
+            <a href="#" @click="isLogin = true" 
+               :class="isLogin ? 'font-bold text-[#0C3A5E] border-b-2 border-[#0C3A5E] pb-1 no-underline transition' : 'text-hover no-underline hover:font-bold'">
                Login
             </a>
-            <a href="#" @click="isLogin = false"
-               :class="!isLogin ? 'font-bold text-[#0C3A5E] border-b-2 border-[#0C3A5E] pb-1 no-underline' : 'text-hover no-underline hover:text-yellow-600'">
+            <a href="#" @click="isLogin = false" 
+               :class="!isLogin ? 'font-bold text-[#0C3A5E] border-b-2 border-[#0C3A5E] pb-1 no-underline transition' : 'text-hover no-underline hover:font-bold'">
                Sign up
             </a>
         </div>
@@ -23,46 +23,46 @@
         <form x-show="isLogin" class="space-y-1">
             <!-- Username -->
             <div class="mb-[2px]">
-                <input type="text" class="mt-1 w-full p-[2px] placeholder-hover border-hover border-[2px] rounded-[2px] text-hover focus:border-yellow-500 focus:outline-none" placeholder="Username">
+                <input type="text" class="mt-1 w-full p-[2px] placeholder-hover border-[2px] border-hover text-hover rounded-[2px] focus:bg-whitehover focus:border-[3px] focus:outline-none duration-100" placeholder="Username">
             </div>
 
             <!-- Password -->
             <div class="mb-1">
-                <input type="password" class="w-full p-[2px] placeholder-hover border-hover border-[2px] rounded-[2px] text-hover focus:border-yellow-500 focus:outline-none" placeholder="Password">
+                <input type="password" class="w-full p-[2px] placeholder-hover border-[2px] border-hover text-hover rounded-[2px] focus:bg-whitehover focus:border-[3px] focus:outline-none duration-100" placeholder="Password">
             </div>
 
             <!-- Forgot Password (Centered, No Underline) -->
             <div class="flex justify-center items-center mt-[2px]">
-                <a href="#" class="text-sm text-hover mb-3 no-underline hover:text-yellow-600 hover:underline">Forgot your password?</a>
+                <a href="#" class="text-sm text-hover mb-3 no-underline hover:text-blue-600 hover:underline duration-150">Forgot your password?</a>
             </div>
 
             <!-- Login Button -->
             <div class="flex justify-center gap-12 mt-6">
-                <button type="submit" class="bg-hover font-bold text-maincolor px-1 py-1 rounded-[4px] w-[130px] h-[36px] text-[18px] hover:text-maincolor hover:bg-yellow-500">LOGIN</button>
-                <button type="button" @click="showProfessionalModal = false" class="bg-[#c4eaf7] text-hover text-[18px] h-[36px] font-bold border-hover border-[1px] px-1 py-1 rounded-[4px] w-[130px] hover:border-0 hover:bg-yellow-500 hover:text-maincolor">CANCEL</button>
+                <button type="submit" class="bg-hover font-bold text-maincolor px-1 py-1 rounded-[4px] w-[130px] h-[36px] text-[18px] hover:text-hover hover:border-[1px] hover:border-hover hover:bg-whitehover">LOGIN</button>
+                <button type="button" @click="showProfessionalModal = false" class="bg-[#c4eaf7] text-hover text-[18px] h-[36px] font-bold border-hover border-[1px] px-1 py-1 rounded-[4px] w-[130px] hover:border-[1px] hover:bg-whitehover hover:text-hover hover:border-hover">CANCEL</button>
             </div>
         </form>
 
         <!-- Sign-up Form -->
         <form x-show="!isLogin" class="space-y-1">
             <!-- Last Name -->
-            <div class="mb-3">
-                <input type="text" class="text-hover mt-1 w-full px-2 py-[1px] border-[2px] border-hover rounded-[3px] placeholder-hover text-center focus:border-yellow-500 focus:outline-none" placeholder="Last Name">
+            <div class="mb-3 ">
+                <input type="text" class="text-hover mt-1 w-full px-2 py-[1px] border-[2px] border-hover rounded-[3px] placeholder-hover text-center focus:border-hover focus:border-[3px] focus:bg-whitehover focus:outline-none" placeholder="Last Name">
             </div>
 
             <!-- Username (Email) -->
             <div class="mb-3">
-                <input type="text" class="text-hover mt-1 w-full px-2 py-[1px] border-[2px] border-hover rounded-[3px] placeholder-hover text-center focus:border-yellow-500 focus:outline-none" placeholder="Email">
+                <input type="text" class="text-hover mt-1 w-full px-2 py-[1px] border-[2px] border-hover rounded-[3px] placeholder-hover text-center focus:border-hover focus:border-[3px] focus:bg-whitehover focus:outline-none" placeholder="Email">
             </div>
 
             <!-- Password -->
             <div class="mb-3">
-                <input type="password" class="text-hover mt-1 w-full px-2 py-[1px] border-[2px] border-hover rounded-[3px] placeholder-hover text-center focus:border-yellow-500 focus:outline-none" placeholder="Password">
+                <input type="password" class="text-hover mt-1 w-full px-2 py-[1px] border-[2px] border-hover rounded-[3px] placeholder-hover text-center focus:border-hover focus:border-[3px] focus:bg-whitehover focus:outline-none" placeholder="Password">
             </div>
 
             <!-- Upload Resume -->
             <div class="mb-4">
-                <label for="file-upload-professional" class="cursor-pointer flex flex-col items-center justify-center border-[2px] border-solid border-hover rounded-[3px] h-14 hover:bg-yellow-200">
+                <label for="file-upload-professional" class="cursor-pointer flex flex-col items-center justify-center border-[2px] border-solid border-hover rounded-[3px] h-14 hover:bg-whitehover duration-100">
                     <span class="text-hover no-underline text-sm">Upload your Resume</span>
                     <div class="flex items-center">
                         <!-- SVG icon -->
@@ -76,8 +76,8 @@
 
             <!-- Sign Up Button -->
             <div class="flex justify-center gap-12 mt-6">
-                <button type="submit" class="bg-hover font-bold text-maincolor px-1 py-1 rounded-[4px] w-[130px] h-[36px] text-[18px] hover:bg-yellow-500 hover:text-maincolor">SIGN UP</button>
-                <button type="button" @click="showProfessionalModal = false" class="bg-[#c4eaf7] text-hover text-[18px] h-[36px] font-bold hover:bg-yellow-500 hover:border-0 hover:text-maincolor border-hover border-[1px] px-1 py-1 rounded-[4px] w-[130px]">CANCEL</button>
+                <button type="submit" class="bg-hover font-bold text-maincolor px-1 py-1 rounded-[4px] w-[130px] h-[36px] text-[18px] hover:bg-whitehover hover:border-[1px] hover:text-hover hover:border-hover duration-100">SIGN UP</button>
+                <button type="button" @click="showProfessionalModal = false" class="bg-[#c4eaf7] text-hover text-[18px] h-[36px] font-bold border-hover border-[1px] px-1 py-1 rounded-[4px] w-[130px] hover:bg-whitehover hover:border-[1px] hover:text-hover hover:border-hover duration-100">CANCEL</button>
             </div>
         </form>
     </div>
