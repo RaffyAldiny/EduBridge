@@ -67,7 +67,7 @@
       
       <div class="w-3/4 h-full flex flex-col justify-start">
         <span class="font-bold text-right text-7xl pb-4">ABOUT US</span>
-        <span class="text-right text-2xl leading-relaxed pl-10">
+        <span class="text-right text-2xl leading-tight pl-10">
           EduBridge is an online platform that offers various professional academic desk services to students, 
           including tutoring, proofreading, statistical analysis, psychometric evaluations, and artistic support. 
           On the platform, qualified experts are categorized based on their areas of expertise to make it easier for 
@@ -84,15 +84,17 @@
       <!-- Vision -->
       <div>
         <h2 class="font-bold text-5xl">VISION</h2>
-        <p class="mt-4 text-2xl leading-loose mx-28">
-        To be the leading online platform that bridges the gap between students and professionals, empowering students with personalized guidance and expertise to achieve academic excellence and career success.        </p>
+        <p class="mt-4 text-2xl leading-tight mx-28">
+          To be the leading online platform that bridges the gap between students and professionals, empowering students with personalized guidance and expertise to achieve academic excellence and career success.
+        </p>
       </div>
 
       <!-- Mission -->
       <div>
         <h2 class="font-bold text-5xl">MISSION</h2>
-        <p class="mt-4 text-2xl mx-28 leading-loose">
-        EduBridge aims to connect students with a diverse range of skilled professionals, providing accessible and affordable one-on-one support in specialized fields like statistics, psychometrics, accounting, and more. We strive to foster a community where students can gain practical insights, enhance their academic performance, and develop the skills needed to excel in their chosen careers.        </p>
+        <p class="mt-4 text-2xl leading-tight mx-28">
+          EduBridge aims to connect students with a diverse range of skilled professionals, providing accessible and affordable one-on-one support in specialized fields like statistics, psychometrics, accounting, and more. We strive to foster a community where students can gain practical insights, enhance their academic performance, and develop the skills needed to excel in their chosen careers.
+        </p>
       </div>
     </section>
   </main>
