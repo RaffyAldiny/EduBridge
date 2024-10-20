@@ -20,7 +20,7 @@
         </div>
 
         <!-- Login Form -->
-        <form x-show="isLogin" action="{{ url('/student') }}" method="GET" class="space-y-1">
+        <form x-show="isLogin" action="{{ url('/studentpreference') }}" method="GET" class="space-y-1">
             <!-- Username -->
             <div class="mb-[2px]">
                 <input type="text" class="mt-1 w-full p-[2px] placeholder-hover border-[2px] border-hover  text-hover rounded-[2px] focus:border-yellow-500 focus:outline-none" placeholder="Username">
