@@ -30,7 +30,7 @@
  <div class="mt-3 flex flex-col">
     <!--first row-->
     <div class="flex flex-row justify-center mx-4">
-    <a href="{{ url('/DataAnalystList') }}" class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
+    <a href="{{ url('/studentpreference/dataanalyst') }}" class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
         <img src="{{ asset('img/DataAnalystLogo.png') }}" alt="Data Analyst Icon" class="w-14 h-14 mr-4">
         <span class="text-hover">DATA ANALYST</span> 
     </a>
