@@ -15,8 +15,7 @@
 </head>
 
 <body class="relative h-screen text-maincolor font-poppins fade-in" x-data="{ showStudentModal: false, showProfessionalModal: false }" x-init="$el.classList.add('fade-in-visible')">
-
-
+    @include('layouts.floatingorbs')
     <livewire:header />
 
     <!-- Main Content -->

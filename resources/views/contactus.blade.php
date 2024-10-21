@@ -16,14 +16,16 @@
 
 </head>
 
-<body class="relative h-screen text-maincolor bg-gray-100 font-poppins fade-in" x-data x-init="$el.classList.add('fade-in-visible')">
-    @extends('layouts.floatingorbs')
+<body class="relative h-screen text-maincolor bg-gray-100 font-poppins fade-in" x-data="floatingOrbs()" x-init="$el.classList.add('fade-in-visible')">
+    
+    <!-- Include Floating Orbs -->
+    @include('layouts.floatingorbs')
+
     @livewireScripts
     <livewire:header />
-    
 
     <!-- Main Content -->
-    <main class="flex flex-col h-full px-5 items-start justify-center">
+    <main class="flex flex-col px-5 items-start justify-center">
         <div class="flex h-full items-center justify-between w-full">
             <!-- Text Section -->
             <div class="w-full h-full flex flex-col px-4">
@@ -56,6 +58,7 @@
             </div>
         </div>
     </main>
+
 </body>
 
 </html>
