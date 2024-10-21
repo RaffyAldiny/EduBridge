@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>EduBridge</title>
     @include('layouts.fadeanimation')
-
 </head>
 
 <body class="relative h-screen text-maincolor bg-gray-100 font-poppins">
@@ -24,82 +23,29 @@
 
     <!-- Main Content -->
     <main class="flex flex-col px-5">
-        <div class="flex flex-row float-in">
-            <img src="{{ asset('img/StudentLogo.png') }}" alt="Student Icon"
-                class="w-14 h-14 rounded-full bg-maincolor p-2">
+        <div class="flex flex-row float-in mb-2">
+            <img src="{{ asset('img/StudentLogo.png') }}" alt="Student Icon" class="w-14 h-14 rounded-full bg-maincolor p-2">
             <span class="font-bold pl-2 text-left text-2xl pb-4 mt-2 pt-1">SELECT YOUR PREFERENCE ...</span>
         </div>
 
-        <!--profession-->
-        <div class="mt-3 flex flex-col float-in">
-            <!--first row-->
-            <div class="flex flex-row justify-center mx-4">
-                <a href="{{ url('/studentpreference/dataanalyst') }}"
-                    class="flex items-center justify-start bg-maincolor  text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
-                    <img src="{{ asset('img/DataAnalystLogo.png') }}" alt="Data Analyst Icon" class="w-14 h-14 mr-4">
-                    <span class="text-hover">DATA ANALYST</span>
+        <!-- Profession Selection Grid -->
+        <div class="grid grid-cols-2 gap-x-24 gap-y-4 float-in">
+            <!-- Loop through professions -->
+            @foreach ([
+                ['href' => 'dataanalyst', 'icon' => 'DataAnalystLogo.png', 'text' => 'DATA ANALYST'],
+                ['href' => 'psychometrician', 'icon' => 'PsychometricianLogo.png', 'text' => 'PSYCHOMETRICIAN'],
+                ['href' => 'editors', 'icon' => 'EditorLogo.png', 'text' => 'EDITORS/LINGUISTS'],
+                ['href' => 'peerreviewer', 'icon' => 'PeerReviewerLogo.png', 'text' => 'PEER REVIEWER'],
+                ['href' => 'ethicist', 'icon' => 'EthicistLogo.png', 'text' => 'ETHICIST'],
+                ['href' => 'statistician', 'icon' => 'StatisticianLogo.png', 'text' => 'STATISTICIAN'],
+                ['href' => 'methodologist', 'icon' => 'MethodologistLogo.png', 'text' => 'METHODOLOGIST'],
+                ['href' => 'accountant', 'icon' => 'AccountantLogo.png', 'text' => 'ACCOUNTANT']
+            ] as $item)
+                <a href="{{ url('/studentpreference/' . $item['href']) }}" class="flex items-center  justify-start bg-maincolor text-white text-[44px] font-bold rounded-lg p-4 shadow-md hover:bg-white duration-200 ease-in">
+                    <img src="{{ asset('img/' . $item['icon']) }}" alt="{{ $item['text'] }} Icon" class="w-14 h-14 mr-4">
+                    <span class="text-hover">{{ $item['text'] }}</span>
                 </a>
-                <span class="text-hover text-transparent">
-                    filler space fgdg
-                </span>
-                <button
-                    class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
-                    <img src="{{ asset('img/PsychometricianLogo.png') }}" alt="PSYCHOMETRICIAN Icon"
-                        class="w-14 h-14 mr-4">
-                    <span class="text-hover">PSYCHOMETRICIAN</span>
-                </button>
-            </div>
-
-            <!--second row-->
-            <div class="flex flex-row justify-center mx-4 mt-3">
-                <button
-                    class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
-                    <img src="{{ asset('img/EditorLogo.png') }}" alt="EDITORS Icon" class="w-14 h-14 mr-4">
-                    <span class="text-hover">EDITORS/LINGUISTS</span>
-                </button>
-                <span class="text-hover text-transparent">
-                    filler space fgdg
-                </span>
-                <button
-                    class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
-                    <img src="{{ asset('img/PeerReviewerLogo.png') }}" alt="PEER REVIEWER Icon" class="w-14 h-14 mr-4">
-                    <span class="text-hover">PEER REVIEWER</span>
-                </button>
-            </div>
-
-            <!--third row-->
-            <div class="flex flex-row justify-center mx-4 mt-3">
-                <button
-                    class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
-                    <img src="{{ asset('img/EthicistLogo.png') }}" alt="ETHICIST Icon" class="w-14 h-14 mr-4">
-                    <span class="text-hover">ETHICIST</span>
-                </button>
-                <span class="text-hover text-transparent">
-                    filler space fgdg
-                </span>
-                <button
-                    class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
-                    <img src="{{ asset('img/StatisticianLogo.png') }}" alt="STATISTICIAN Icon" class="w-14 h-14 mr-4">
-                    <span class="text-hover">STATISTICIAN</span>
-                </button>
-            </div>
-
-            <!--fourth row-->
-            <div class="flex flex-row justify-center mx-4 mt-3">
-                <button
-                    class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
-                    <img src="{{ asset('img/MethodologistLogo.png') }}" alt="ETHICIST Icon" class="w-14 h-14 mr-4">
-                    <span class="text-hover">METHODOLOGIST</span>
-                </button>
-                <span class="text-hover text-transparent">
-                    filler space fgdg
-                </span>
-                <button
-                    class="flex items-center justify-start bg-maincolor text-white text-5xl font-bold rounded-lg p-4 shadow-md w-1/2 hover:bg-white duration-200 ease-in">
-                    <img src="{{ asset('img/AccountantLogo.png') }}" alt="STATISTICIAN Icon" class="w-14 h-14 mr-4">
-                    <span class="text-hover">ACCOUNTANT</span>
-                </button>
-            </div>
+            @endforeach
         </div>
     </main>
 </body>
