@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <title>Edubridge Login</title>
     <meta charset="utf-8">
@@ -12,9 +13,8 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     @include('layouts.fadeanimation')
 </head>
-<body class="relative h-screen text-maincolor font-poppins fade-in" 
-      x-data="{ showStudentModal: false, showProfessionalModal: false }"
-      x-init="$el.classList.add('fade-in-visible')">
+
+<body class="relative h-screen text-maincolor font-poppins fade-in" x-data="{ showStudentModal: false, showProfessionalModal: false }" x-init="$el.classList.add('fade-in-visible')">
 
 
     <livewire:header />
@@ -22,27 +22,25 @@
     <!-- Main Content -->
     <div class="flex flex-col items-center">
         <h1 class="text-white text-3xl md:text-7xl font-bold text-center mb-8 mt-8 float-in">
-            Connecting You to Expert <span class="block mt-4">Solutions for Academic</span> <span class="block mt-4">Success</span>
+            Connecting You to Expert <span class="block mt-4">Solutions for Academic</span> <span
+                class="block mt-4">Success</span>
         </h1>
         <!-- Button Section -->
         <div class="flex space-x-[68px] mt-4 float-in">
             <!-- Student Button -->
-            <button
-                @click="showStudentModal = true"
+            <button @click="showStudentModal = true"
                 :class="[showStudentModal ? 'bg-blue-100' : 'bg-maincolor  hover:bg-whitehover duration-150 ']"
-                class="flex items-center justify-center w-[360px] h-[76px] text-hover text-[32px] font-bold rounded-2xl shadow-md"
-            >
+                class="flex items-center justify-center w-[360px] h-[76px] text-hover text-[32px] font-bold rounded-2xl shadow-md">
                 <img src="{{ asset('img/StudentLogo.png') }}" alt="Student Icon" class="w-[52px] h-[52px] mr-4">
                 STUDENT
             </button>
 
             <!-- Professional Button -->
-            <button
-                @click="showProfessionalModal = true"
+            <button @click="showProfessionalModal = true"
                 :class="[showProfessionalModal ? 'bg-yellow-400' : 'bg-maincolor   hover:bg-whitehover duration-150']"
-                class="flex items-center justify-center w-[360px] h-[76px] text-hover text-[32px] font-bold rounded-2xl shadow-md"
-            >
-                <img src="{{ asset('img/ProfessionalLogo.png') }}" alt="Professional Icon" class="w-[52px] h-[52px] mr-4">
+                class="flex items-center justify-center w-[360px] h-[76px] text-hover text-[32px] font-bold rounded-2xl shadow-md">
+                <img src="{{ asset('img/ProfessionalLogo.png') }}" alt="Professional Icon"
+                    class="w-[52px] h-[52px] mr-4">
                 PROFESSIONAL
             </button>
         </div>
@@ -54,4 +52,5 @@
 
     @livewireScripts
 </body>
+
 </html>
