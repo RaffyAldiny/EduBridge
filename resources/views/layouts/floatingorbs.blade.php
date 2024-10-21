@@ -28,7 +28,7 @@
   }
 
   .orb:hover {
-      z-index: 1;
+      z-index: -5;
       /* Bring orb to front during hover */
       transform: scale(1.5);
       opacity: 1;

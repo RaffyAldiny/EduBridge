@@ -18,8 +18,7 @@
 
 <body class="relative h-screen text-maincolor bg-gray-100 font-poppins">
     @livewireScripts
-    @extends('layouts.floatingorbs')
-    <livewire:header />
+    <livewire:headertwo />
 
     <main class="flex flex-col px-5">
         <div class="flex flex-row items-center mb-6 float-in">
@@ -40,7 +39,7 @@
                             ? 'bg-red-500'
                             : 'bg-gray-500');
                 @endphp
-                <div class="flex items-center justify-between py-4 border-b border-white">
+                <div class="flex items-center justify-between py-4 border-b hover:bg-hover hover:rounded-b-xl hover:p-4 duration-150 border-white ">
                     <div class="flex items-center">
                         <div class="relative">
                             <img src="{{ $professional['profile_picture'] }}" alt="Profile Picture"
@@ -58,7 +57,7 @@
                     <!-- Three Dots Icon -->
                     <button>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-10">
+                            stroke="currentColor" class="size-10 hover:size-8 z-10 duration-100">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>

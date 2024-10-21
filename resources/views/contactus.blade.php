@@ -46,7 +46,7 @@
                         <i class="fa fa-envelope text-xl mr-2"></i>
                         <span class="font-bold">Email:</span>
                         <a href="mailto:EduBridge2024@gmail.com"
-                            class="ml-2 text-maincolor underline">EduBridge2024@gmail.com</a>
+                            class="ml-2 text-maincolor underline hover:text-white">EduBridge2024@gmail.com</a>
                     </div>
                     <div class="flex items-center float-in">
                         <i class="fa fa-map-marker text-xl mr-2"></i>

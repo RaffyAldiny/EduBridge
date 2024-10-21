@@ -29,7 +29,7 @@
         </div>
 
         <!-- Profession Selection Grid -->
-        <div class="grid grid-cols-2 gap-x-24 gap-y-4 float-in">
+        <div class="grid grid-cols-2 gap-x-16 px-10 gap-y-4 float-in">
             <!-- Loop through professions -->
             @foreach ([
                 ['href' => 'dataanalyst', 'icon' => 'DataAnalystLogo.png', 'text' => 'DATA ANALYST'],
@@ -41,8 +41,8 @@
                 ['href' => 'methodologist', 'icon' => 'MethodologistLogo.png', 'text' => 'METHODOLOGIST'],
                 ['href' => 'accountant', 'icon' => 'AccountantLogo.png', 'text' => 'ACCOUNTANT']
             ] as $item)
-                <a href="{{ url('/studentpreference/' . $item['href']) }}" class="flex items-center  justify-start bg-maincolor text-white text-[44px] font-bold rounded-lg p-4 shadow-md hover:bg-white duration-200 ease-in">
-                    <img src="{{ asset('img/' . $item['icon']) }}" alt="{{ $item['text'] }} Icon" class="w-14 h-14 mr-4">
+                <a href="{{ url('/studentpreference/' . $item['href']) }}" class="flex items-center h-[90px]  justify-start bg-maincolor text-white text-[44px] font-bold rounded-lg p-4 shadow-md hover:bg-white duration-200 ease-in">
+                    <img src="{{ asset('img/' . $item['icon']) }}" alt="{{ $item['text'] }} Icon" class="w-14 h-14 mr-4 ">
                     <span class="text-hover">{{ $item['text'] }}</span>
                 </a>
             @endforeach
