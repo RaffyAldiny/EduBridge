@@ -28,17 +28,17 @@
         </div>
 
         <!-- List of Professionals -->
-        <div class="bg-gray-900 p-6 mx-5 rounded-xl shadow-md float-in">
+        <div class="bg-[#c4eaf7] bg-opacity-10 p-6 mx-5 rounded-xl shadow-md float-in">
             @foreach ($professionals as $professional)
             <div class="flex items-center justify-between py-4 border-b border-gray-700">
                 <div class="flex items-center">
                     <div class="relative">
-                        <img src="{{ $professional['profile_picture'] }}" alt="Profile Picture" class="w-10 h-10 rounded-full">
+                        <img src="{{ $professional['profile_picture'] }}" alt="Profile Picture" class="border-2  w-12 h-12 rounded-full">
                         <span class="absolute bottom-0 right-0 block w-3 h-3 {{ $professional['is_active'] ? 'bg-green-500' : 'bg-red-500' }} rounded-full ring-2 ring-white"></span>
                     </div>
                     <div class="ml-4">
-                        <p class="text-white font-bold">{{ $professional['name'] }}</p>
-                        <p class="text-gray-400">{{ $professional['is_active'] ? 'Active' : 'Last active ' . $professional['last_active'] }}</p>
+                        <p class="text-maincolor font-bold">{{ $professional['name'] }}</p>
+                        <p class="text-maincolor">{{ $professional['is_active'] ? 'Active' : 'Last active ' . $professional['last_active'] }}</p>
                     </div>
                 </div>
                 <!-- Three Dots Icon -->
