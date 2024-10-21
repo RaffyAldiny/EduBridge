@@ -41,14 +41,14 @@
 <script>
   function floatingOrbs() {
       return {
-          orbCount: 4,
+          orbCount: 3,
           init() {
               for (let i = 0; i < this.orbCount; i++) {
                   this.createOrb();
               }
           },
           createOrb() {
-              const size = Math.random() * 90 + 32;
+              const size = Math.random() * 90 + 40;
               const orb = document.createElement('div');
               orb.classList.add('orb');
               orb.style.width = `${size}px`;

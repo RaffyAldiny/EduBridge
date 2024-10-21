@@ -33,11 +33,11 @@
 
             <!-- Forgot Password (Centered, No Underline) -->
             <div class="flex justify-center items-center mt-[2px]">
-                <a href="#" class="text-sm text-hover mb-3 no-underline hover:text-blue-600 hover:underline duration-150">Forgot your password?</a>
+                <a href="#" class="text-sm text-hover mb-2 no-underline hover:text-blue-600 hover:underline duration-150">Forgot your password?</a>
             </div>
 
             <!-- Login Button -->
-            <div class="flex justify-center gap-12 mt-6">
+            <div class="flex justify-center gap-12 mt-6 mb-2">
                 <button type="submit" class="bg-hover font-bold text-maincolor px-1 py-1 rounded-[4px] w-[130px] h-[36px] text-[18px] hover:text-hover hover:border-[1px] hover:border-hover hover:bg-whitehover">LOGIN</button>
                 <button type="button" @click="showProfessionalModal = false" class="bg-[#c4eaf7] text-hover text-[18px] h-[36px] font-bold border-hover border-[1px] px-1 py-1 rounded-[4px] w-[130px] hover:border-[1px] hover:bg-whitehover hover:text-hover hover:border-hover">CANCEL</button>
             </div>
@@ -61,7 +61,7 @@
             </div>
 
             <!-- Upload Resume -->
-            <div class="mb-4">
+            <div class="mb-3">
                 <label for="file-upload-professional" class="cursor-pointer flex flex-col items-center justify-center border-[2px] border-solid border-hover rounded-[3px] h-14 hover:bg-whitehover duration-100">
                     <span class="text-hover no-underline text-sm">Upload your Resume</span>
                     <div class="flex items-center">
@@ -75,7 +75,7 @@
             </div>
 
             <!-- Sign Up Button -->
-            <div class="flex justify-center gap-12 mt-6">
+            <div class="flex justify-center gap-12 mt-6 mb-2">
                 <button type="submit" class="bg-hover font-bold text-maincolor px-1 py-1 rounded-[4px] w-[130px] h-[36px] text-[18px] hover:bg-whitehover hover:border-[1px] hover:text-hover hover:border-hover duration-100">SIGN UP</button>
                 <button type="button" @click="showProfessionalModal = false" class="bg-[#c4eaf7] text-hover text-[18px] h-[36px] font-bold border-hover border-[1px] px-1 py-1 rounded-[4px] w-[130px] hover:bg-whitehover hover:border-[1px] hover:text-hover hover:border-hover duration-100">CANCEL</button>
             </div>

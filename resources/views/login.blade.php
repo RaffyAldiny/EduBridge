@@ -21,8 +21,8 @@
     <!-- Main Content -->
     <div class="flex flex-col items-center">
         <h1 class="text-white text-3xl md:text-7xl font-bold text-center mb-8 mt-8 float-in">
-            Connecting You to Expert <span class="block mt-4">Solutions for Academic</span> <span
-                class="block mt-4">Success</span>
+            Connecting You to Expert <span class="block mt-3">Solutions for Academic</span> <span
+                class="block mt-3">Success</span>
         </h1>
         <!-- Button Section -->
         <div class="flex space-x-[68px] mt-4 float-in">
