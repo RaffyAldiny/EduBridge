@@ -17,9 +17,10 @@
 </head>
 
 <body class="relative h-screen text-maincolor bg-gray-100 font-poppins fade-in" x-data x-init="$el.classList.add('fade-in-visible')">
+    @extends('layouts.floatingorbs')
     @livewireScripts
     <livewire:header />
-    @extends('layouts.floatingorbs')
+    
 
     <!-- Main Content -->
     <main class="flex flex-col h-full px-5 items-start justify-center">
