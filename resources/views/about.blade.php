@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Existing head content -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
@@ -20,7 +21,9 @@
             overflow-x: hidden;
         }
 
+        /* Set position: relative on the first section */
         section {
+            position: relative;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -47,6 +50,7 @@
             border-radius: 12px;
         }
 
+        /* Chevron button styling */
         #scroll-down-button {
             position: absolute;
             bottom: 20px;
@@ -57,7 +61,6 @@
         }
 
         @keyframes bounce {
-
             0%,
             100% {
                 transform: translateX(-50%) translateY(0);
@@ -91,7 +94,7 @@
 
     <main class="px-3">
         <!-- About Us Section -->
-        <section class="h-screen w-full">
+        <section class="h-screen w-full" id="about-us-section">
             <div class="about-us-content">
                 <div class="animate" id="about-us-image">
                     <img src="{{ asset('img/edubridgeteam.png') }}" alt="About Us Photo"
@@ -115,8 +118,16 @@
                     </span>
                 </div>
             </div>
-        </section>
 
+            <!-- Chevron Button moved inside the first section -->
+            <div id="scroll-down-button" onclick="scrollToSection()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="h-10 w-10 text-maincolor hover:text-gray-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 9l-7 7-7-7" />
+                </svg>
+            </div>
+        </section>
 
         <div class="mt-16 h-[1px] w-5/6 bg-whitehover mx-auto opacity-30"></div>
 
@@ -144,13 +155,7 @@
         </section>
     </main>
 
-    <!-- Chevron Button -->
-    <div id="scroll-down-button" onclick="scrollToSection()">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-            class="h-10 w-10 text-maincolor hover:text-gray-500">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-        </svg>
-    </div>
+    <!-- Removed the chevron button from outside the main content -->
 
     <script>
         function scrollToSection() {

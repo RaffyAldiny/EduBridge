@@ -37,7 +37,7 @@
 
             <!-- Professional Button -->
             <button @click="showProfessionalModal = true"
-                :class="[showProfessionalModal ? 'bg-yellow-400' : 'bg-maincolor   hover:bg-whitehover duration-150']"
+                :class="[showProfessionalModal ? 'bg-blue-100' : 'bg-maincolor   hover:bg-whitehover duration-150']"
                 class="flex items-center justify-center w-[360px] h-[76px] text-hover text-[32px] font-bold rounded-2xl shadow-md">
                 <img src="{{ asset('img/ProfessionalLogo.png') }}" alt="Professional Icon"
                     class="w-[52px] h-[52px] mr-4">
