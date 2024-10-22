@@ -13,28 +13,28 @@ class Studentlogin extends Component
     use WithFileUploads; // Add the trait here
 
     public $showModal = false;
-    public $isLogin = true; // Track whether it's login or signup
+    public $isLogin = true; 
     public $name, $email, $password, $schoolId; // Form fields
 
     protected $rules = [
         'email' => 'required|email',
-        'password' => 'required|min:6',
+        'password' => 'required',
         'name' => 'required|string|max:255',
-        'schoolId' => 'required|file|max:1024', // Adjust as needed for your requirements
+        'schoolId' => 'required|file|max:1024', 
     ];
 
     public function login()
     {
-        $credentials = $this->validate([
-            'email' => 'required|email',
-            'password' => 'required|min:6',
-        ]);
-
-        if (Auth::guard('students')->attempt($credentials)) {
-            return redirect()->to('/studentpreference'); // Redirect on successful login
-        }
-
-        session()->flash('error', 'Invalid login credentials.');
+    $credentials = $this->validate([
+        'email' => 'required|email',
+        'password' => 'required',
+    ]);
+    
+    // Attempt to log the user in
+    if (Auth::guard('students')->attempt($credentials)) {
+        return redirect()->to('/studentpreference'); // Redirect to the desired page
+    }
+    session()->flash('error', 'Invalid Login Credentials');
     }
 
     public function signup()
@@ -52,7 +52,7 @@ class Studentlogin extends Component
             'school_id_path' => $path,
         ]);
     
-        session()->flash('success', 'Sign-up successful. Please login.');
+        session()->flash('success', 'Sign-up Successful. Please wait for approval.'); // Flash success message
         return redirect()->to('/login'); // Redirect to login page
     }
     public function render()
