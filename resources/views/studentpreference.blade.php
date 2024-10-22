@@ -25,7 +25,7 @@
     <main class="flex flex-col px-5">
         <div class="flex flex-row float-in mb-2">
             <img src="{{ asset('img/StudentLogo.png') }}" alt="Student Icon" class="w-14 h-14 rounded-full bg-maincolor p-2">
-            <span class="font-bold pl-2 text-left text-2xl pb-4 mt-2 pt-1">SELECT YOUR PREFERENCE ...</span>
+            <span class="font-bold pl-2 text-left text-2xl pb-4 mt-2 pt-1">SELECT WHAT YOU NEED:</span>
         </div>
 
         <!-- Profession Selection Grid -->

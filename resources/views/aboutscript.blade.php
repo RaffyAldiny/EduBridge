@@ -151,6 +151,8 @@
             </div>
         </section>
 
+        <div class="mt-16 h-[1px] w-5/6 bg-whitehover mx-auto opacity-30"></div>
+
         <!-- Vision and Mission Section -->
         <section id="vision-mission"
             class="flex flex-col mt-[-40px] text-center py-16 space-y-12 text-maincolor h-screen">

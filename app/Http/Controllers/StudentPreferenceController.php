@@ -16,11 +16,11 @@ class StudentPreferenceController extends Controller
 
         // List of professionals
         $professionals = [
-            ['name' => 'John Cris A. Demafeliz', 'profile_picture' => 'https://via.placeholder.com/40', 'is_active' => true, 'last_active' => 'Active'],
-            ['name' => 'Ella Marie Juan John D. Dinglasan', 'profile_picture' => 'https://via.placeholder.com/40', 'is_active' => false, 'last_active' => '3 hours ago'],
-            ['name' => 'Margarita Kurapika D. Dela Cruz', 'profile_picture' => 'https://via.placeholder.com/40', 'is_active' => false, 'last_active' => '4 hours ago'],
-            ['name' => 'Cutie Katrina Ysabelle Ysabelle Torres', 'profile_picture' => 'https://via.placeholder.com/40', 'is_active' => false, 'last_active' => 'a day ago'],
-            ['name' => 'May June July August D. Tado', 'profile_picture' => 'https://via.placeholder.com/40', 'is_active' => false, 'last_active' => '3 days ago'],
+            ['name' => 'John Alex B. Thompson', 'profile_picture' => 'https://via.placeholder.com/40', 'is_active' => true, 'last_active' => 'Active'],
+            ['name' => 'Jamie Ysabelle E. Garcia', 'profile_picture' => 'https://via.placeholder.com/40', 'is_active' => false, 'last_active' => '3 hours ago'],
+            ['name' => 'Morgan Mae B. Patel', 'profile_picture' => 'https://via.placeholder.com/40', 'is_active' => false, 'last_active' => '4 hours ago'],
+            ['name' => 'Marie Taylor S. Bennett', 'profile_picture' => 'https://via.placeholder.com/40', 'is_active' => false, 'last_active' => 'a day ago'],
+            ['name' => 'Riley Jean G. Chen', 'profile_picture' => 'https://via.placeholder.com/40', 'is_active' => false, 'last_active' => '3 days ago'],
         ];
 
         // Sorting logic
