@@ -41,7 +41,7 @@ To get started with EduBridge, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/edubridge.git
+   git clone https://github.com/RaffyAldiny/edubridge.git
    cd edubridge
    ```
 
