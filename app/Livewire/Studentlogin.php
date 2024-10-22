@@ -3,7 +3,7 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use Livewire\WithFileUploads; // Import the trait
+use Livewire\WithFileUploads; 
 use Illuminate\Support\Facades\Auth;
 use App\Models\Students; // Ensure this is the correct model path
 use Illuminate\Support\Facades\Hash;

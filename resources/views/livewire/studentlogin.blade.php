@@ -1,5 +1,8 @@
 <!-- Student Login-Signup Modal -->
-<div x-show="showStudentModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" x-data="{ isLogin: true, fileNameStudent: '' }">
+<div x-show="showStudentModal" 
+     class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" 
+     x-data="{ isLogin: true, fileNameStudent: '' }">
+     
     <div class="bg-maincolor pt-3 pb-1 pr-6 pl-6 rounded-[6px] shadow-lg w-[400px]">
         
         @if (session()->has('error'))
