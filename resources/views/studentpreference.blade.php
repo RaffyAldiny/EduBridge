@@ -29,7 +29,7 @@
         </div>
 
         <!-- Profession Selection Grid -->
-        <div class="grid grid-cols-2 gap-x-16 px-10 gap-y-4 float-in">
+        <div class="grid grid-cols-2 gap-x-16 px-10 gap-y-4 z-50 float-in">
             <!-- Loop through professions -->
             @foreach ([
                 ['href' => 'dataanalyst', 'icon' => 'DataAnalystLogo.png', 'text' => 'DATA ANALYST'],

@@ -1,7 +1,7 @@
 <div class="relative p-4">
     <div class="fixed inset-0 bg-cover bg-center z-[-1]" style="background-image: url('{{ asset('img/edubridgebg.png') }}');"></div>
     
-    <div x-data="{ isOpen: false, currentPage: window.location.pathname }" class="relative flex items-center justify-between px-8 z-50 py-4">
+    <div x-data="{ isOpen: false, currentPage: window.location.pathname }" class="relative flex items-center justify-between px-4 z-50 py-4">
         <div class="flex items-center space-x-2 relative">
             <button 
                 @click="isOpen = !isOpen" 
@@ -28,7 +28,7 @@
         </div>
 
         <a href="{{ url('/login') }}">
-            <button class="text-maincolor px-4 py-2 hover:bg-whitehover hover:border-hover hover:text-hover border-2 text-sm font-bold border-maincolor rounded-lg duration-200 ease-in">L O G I N</button>
+            <button class="text-maincolor mb-2 px-4 py-2 hover:bg-whitehover hover:border-hover hover:text-hover border-2 text-sm font-bold border-maincolor rounded-lg duration-200 ease-in">L O G I N</button>
         </a>
         
         
@@ -42,9 +42,8 @@
             x-transition:leave="transition ease-in duration-100"
             x-transition:leave-start="opacity-100 transform scale-100"
             x-transition:leave-end="opacity-0 transform scale-95"
-            class="absolute top-20 left-8 w-40 text-center text-l bg-maincolor text-black rounded-lg mt-2"
-            style="box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);"
-        >
+            class="absolute top-16 left-6 w-40 text-center text-l bg-maincolor text-black rounded-lg mt-2"
+            style="box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
             <ul class="p-2 space-y-2">
                 <li>
                     <a href="{{ url('/') }}">
@@ -72,5 +71,5 @@
     </div>
 
     <!-- Divider -->
-    <div class="border-b-2 mx-4 -mt-4 border-maincolor"></div>
+    <div class="border-b-2 mx-4 -mt-6 border-maincolor"></div>
 </div>

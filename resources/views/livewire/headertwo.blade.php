@@ -5,7 +5,7 @@
 
     <!-- Header -->
     <div x-data="{ isOpen: false, currentPage: window.location.pathname }"
-        class="relative flex items-center justify-between px-8 py-4">
+        class="relative flex items-center justify-between px-4 py-4 z-50">
         <!-- Left Side (Hamburger + EduBridge logo) -->
         <div class="flex items-center justify-center space-x-2">
             <!-- Hamburger Icon -->
@@ -43,7 +43,7 @@
             <!-- Notification Icon with red badge -->
             <button class="relative focus:outline-none w-10 h-10 flex items-center justify-center">
                 <!-- Notification Image -->
-                <img src="{{ asset('img/MessageLogo.png') }}" alt="Notifications" class="w-10 h-10">
+                <img src="{{ asset('img/MessageLogo.png') }}" alt="Notifications" class="w-10 h-10 mb-2">
 
                 <!-- Red Badge for Notification Count -->
                 <span
@@ -55,7 +55,7 @@
             <!-- Logout Button -->
             <a href="{{ route('homepage') }}" class="no-underline">
                 <button
-                    class="text-maincolor px-4 py-2 hover:bg-whitehover duration-200 hover:border-hover hover:text-hover border-2 text-sm font-bold border-maincolor rounded-lg">
+                    class="text-maincolor px-4 py-2 mb-2 hover:bg-whitehover duration-200 hover:border-hover hover:text-hover border-2 text-sm font-bold border-maincolor rounded-lg">
                     L O G O U T
                 </button>
             </a>
@@ -68,14 +68,23 @@
             x-transition:leave="transition ease-in duration-100"
             x-transition:leave-start="opacity-100 transform scale-100"
             x-transition:leave-end="opacity-0 transform scale-95"
-            class="absolute top-20 left-8 w-40 text-center text-l bg-maincolor text-black rounded-lg mt-2 z-50"
+            class="absolute top-16 left-6 w-40 text-center text-l bg-maincolor text-black rounded-lg mt-2 z-50"
             style="box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
+            
             <ul class="p-2 space-y-2">
                 <li>
                     <a href="{{ url('/studentpreference') }}">
                         <button class="text-black w-full pt-2 bg-maincolor hover:font-bold rounded"
-                            :class="{ 'font-bold': currentPage === '/' }">
+                            :class="{ 'font-bold': currentPage === '/studentpreference' }">
                             Preferences
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/') }}">
+                        <button class="text-black w-full pb-2 bg-maincolor hover:font-bold rounded"
+                            :class="{ 'font-bold': currentPage === '/' }">
+                            Inbox
                         </button>
                     </a>
                 </li>
@@ -100,5 +109,5 @@
     </div>
 
     <!-- Divider -->
-    <div class="border-b-2 mx-4 -mt-4 border-maincolor"></div>
+    <div class="border-b-2 mx-4 -mt-6 border-maincolor"></div>
 </div>
