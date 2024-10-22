@@ -26,7 +26,6 @@ EduBridge is a comprehensive platform designed to bridge the gap between learner
 EduBridge is built using modern web technologies to ensure a seamless, responsive, and high-performance user experience.
 
 - **Frontend**: 
-  - **React.js**: For building dynamic, user-friendly interfaces.
   - **Tailwind CSS**: For fast and responsive UI design.
   - **Alpine.js**: Lightweight JavaScript framework for interactive components.
   
