@@ -14,6 +14,27 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.2/dist/cdn.min.js"></script>
     @include('layouts.fadeanimation')
 
+ <!-- Include Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Add your custom Tailwind configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'maincolor': '#c4eaf7',
+              'hover': '#0b263b',
+              'whitehover': '#FEFEFE',
+            },
+            fontFamily: {
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+
     <style>
         html,
         body {
@@ -24,7 +45,7 @@
         /* Set position: relative on the first section */
         section {
             position: relative;
-            height: 100vh;
+            height: auto;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -36,8 +57,9 @@
             align-items: center;
             justify-content: space-between;
             width: 100%;
-            padding: 0 50px;
-        }
+            padding:0 50px;
+            margin-top: -200px;
+         }
 
         .about-us-text {
             flex: 1;
@@ -53,7 +75,7 @@
         /* Chevron button styling */
         #scroll-down-button {
             position: absolute;
-            bottom: 20px;
+            bottom: 150px;
             left: 50%;
             transform: translateX(-50%);
             cursor: pointer;
@@ -92,7 +114,7 @@
     <livewire:header />
     @extends('layouts.floatingorbs')
 
-    <main class="px-3">
+    <main class="px-3 -pt-2">
         <!-- About Us Section -->
         <section class="h-screen w-full" id="about-us-section">
             <div class="about-us-content">
@@ -128,8 +150,6 @@
                 </svg>
             </div>
         </section>
-
-        <div class="mt-16 h-[1px] w-5/6 bg-whitehover mx-auto opacity-30"></div>
 
         <!-- Vision and Mission Section -->
         <section id="vision-mission"
