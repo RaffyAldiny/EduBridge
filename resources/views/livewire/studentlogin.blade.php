@@ -1,6 +1,19 @@
 <!-- Student Login-Signup Modal -->
 <div x-show="showStudentModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" x-data="{ isLogin: true, fileNameStudent: '' }">
     <div class="bg-maincolor pt-3 pb-1 pr-6 pl-6 rounded-[6px] shadow-lg w-[400px]">
+        
+        @if (session()->has('error'))
+            <div class="alert alert-danger text-center leading-tight">
+                {{ session('error') }}
+            </div>
+        @endif
+
+         @if (session()->has('success'))
+            <div class="alert alert-success text-center leading-tight">
+                {{ session('success') }}
+            </div>
+        @endif
+
         <!-- Modal Header -->
         <div class="flex justify-center items-center mb-[2px]">
             <img src="{{ asset('img/StudentLogo.png') }}" alt="Student Logo" class="w-8 h-8 mr-2 mb-2">
@@ -18,9 +31,9 @@
                Sign up
             </a>
         </div>
-
         <!-- Login Form -->
         <form x-show="isLogin" wire:submit.prevent="login" class="space-y-1">
+            
             <div class="mb-[2px]">
                 <input type="email" wire:model="email" class="mt-1 w-full p-[2px] placeholder-hover border-[2px] border-hover text-hover rounded-[2px] focus:bg-whitehover focus:border-[3px] focus:outline-none duration-100" placeholder="Email" required>
             </div>
@@ -66,9 +79,9 @@
             </div>
 
             <div class="flex justify-center gap-12 mt-6 mb-2">
-    <button type="submit" wire:click.prevent="signup" class="bg-hover font-bold text-maincolor px-1 py-1 rounded-[4px] w-[130px] h-[36px] text-[18px] hover:bg-whitehover hover:border-[1px] hover:text-hover hover:border-hover duration-100">SIGN UP</button>
-    <button type="button" @click="showStudentModal = false" class="bg-[#c4eaf7] text-hover text-[18px] h-[36px] font-bold border-hover border-[1px] px-1 py-1 rounded-[4px] w-[130px] duration-100">CANCEL</button>
-</div>
+            <button type="submit" wire:click.prevent="signup" class="bg-hover font-bold text-maincolor px-1 py-1 rounded-[4px] w-[130px] h-[36px] text-[18px] hover:bg-whitehover hover:border-[1px] hover:text-hover hover:border-hover duration-100">SIGN UP</button>
+            <button type="button" @click="showStudentModal = false" class="bg-[#c4eaf7] text-hover text-[18px] h-[36px] font-bold border-hover border-[1px] px-1 py-1 rounded-[4px] w-[130px] duration-100">CANCEL</button>
+            </div>
         </form>
     </div>
 </div>
