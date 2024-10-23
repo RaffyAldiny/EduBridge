@@ -11,6 +11,26 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     @include('layouts.fadeanimation')
+    <!-- Include Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Add your custom Tailwind configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'maincolor': '#c4eaf7',
+              'hover': '#0b263b',
+              'whitehover': '#FEFEFE',
+            },
+            fontFamily: {
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
     <title>EduBridge</title>
 
 </head>

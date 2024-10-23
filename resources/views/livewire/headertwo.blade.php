@@ -5,6 +5,7 @@
 
     <!-- Header -->
     <div x-data="{ isOpen: false, currentPage: window.location.pathname }"
+        x-cloak
         class="relative flex items-center justify-between px-4 py-4 z-50">
         <!-- Left Side (Hamburger + EduBridge logo) -->
         <div class="flex items-center justify-center space-x-2">

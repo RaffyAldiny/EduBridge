@@ -13,6 +13,27 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.2/dist/cdn.min.js"></script>
     <title>EduBridge</title>
     @include('layouts.fadeanimation')
+    
+    <!-- Include Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Add your custom Tailwind configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'maincolor': '#c4eaf7',
+              'hover': '#0b263b',
+              'whitehover': '#FEFEFE',
+            },
+            fontFamily: {
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
 
 </head>
 
@@ -25,7 +46,7 @@
     <livewire:header />
 
     <!-- Main Content -->
-    <main class="flex flex-col px-5 items-start justify-center">
+    <main class="flex flex-col px-5 items-start justify-center float-in">
         <div class="flex h-full items-center justify-between w-full">
             <!-- Text Section -->
             <div class="w-full h-full flex flex-col px-4">

@@ -1,5 +1,5 @@
 <!-- Student Login-Signup Modal -->
-<div x-show="showStudentModal" 
+<div x-show="showStudentModal" x-cloak 
      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" 
      x-data="{ isLogin: true, fileNameStudent: '' }">
      

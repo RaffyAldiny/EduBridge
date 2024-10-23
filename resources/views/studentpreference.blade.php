@@ -14,6 +14,26 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>EduBridge</title>
     @include('layouts.fadeanimation')
+     <!-- Include Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Add your custom Tailwind configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'maincolor': '#c4eaf7',
+              'hover': '#0b263b',
+              'whitehover': '#FEFEFE',
+            },
+            fontFamily: {
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
 </head>
 
 <body class="relative h-screen text-maincolor bg-gray-100 font-poppins">

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Edubridge Login</title>
+    <title>EduBridge Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
@@ -12,6 +12,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     @include('layouts.fadeanimation')
+     <!-- Include Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Add your custom Tailwind configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'maincolor': '#c4eaf7',
+              'hover': '#0b263b',
+              'whitehover': '#FEFEFE',
+            },
+            fontFamily: {
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
 </head>
 
 <body class="relative h-screen text-maincolor font-poppins fade-in z-10" x-data="{ showStudentModal: false, showProfessionalModal: false }" x-init="$el.classList.add('fade-in-visible')">

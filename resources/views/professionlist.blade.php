@@ -11,6 +11,26 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.2/dist/cdn.min.js"></script>
     <script src="https://unpkg.com/heroicons@2.0.0/dist/heroicons.min.js"></script>
     @include('layouts.fadeanimation')
+     <!-- Include Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Add your custom Tailwind configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'maincolor': '#c4eaf7',
+              'hover': '#0b263b',
+              'whitehover': '#FEFEFE',
+            },
+            fontFamily: {
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>EduBridge - {{ ucfirst($profession) }} Professionals</title>

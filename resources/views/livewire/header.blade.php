@@ -1,7 +1,7 @@
 <div class="relative p-4">
     <div class="fixed inset-0 bg-cover bg-center z-[-1]" style="background-image: url('{{ asset('img/edubridgebg.png') }}');"></div>
     
-    <div x-data="{ isOpen: false, currentPage: window.location.pathname }" class="relative flex items-center justify-between px-4 z-50 py-4">
+    <div x-data="{ isOpen: false, currentPage: window.location.pathname }" x-cloak class="relative flex items-center justify-between px-4 z-50 py-4">
         <div class="flex items-center space-x-2 relative">
             <button 
                 @click="isOpen = !isOpen" 
