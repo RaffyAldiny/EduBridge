@@ -1,8 +1,9 @@
 <div class="z-100">
     <!-- Trigger button (Three Dots) with Tooltip -->
-    <div x-data="{ tooltip: false, showPopup: false }" class="relative">
+    <div x-data="{ tooltip: false, showPopup: false }" x-cloak class="relative">
         <!-- Tooltip -->
         <div x-show="tooltip"
+        x-cloak
              class="absolute z-20 bg-gray-700 text-white text-xs text-center rounded py-2 px-4 mb-10"
              style="bottom: 10%;">
             Show Credentials
