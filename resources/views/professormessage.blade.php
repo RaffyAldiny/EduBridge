@@ -24,7 +24,7 @@
     <livewire:headerthree />
 
     <!-- Main Message Box Section -->
-    <div class="h-screen"> <!-- Set the height to 100% of the screen -->
+    <div class="h-full bg-white"> <!-- Set the height to 100% of the screen -->
         <div class="bg-gray-800 text-white p-6 rounded-lg shadow-md max-w-4xl mx-auto h-full flex flex-col">
             <!-- User Profile Section -->
             <div class="flex justify-between items-center mb-6">
