@@ -36,7 +36,7 @@
     <title>EduBridge - {{ ucfirst($profession) }} Professionals</title>
 </head>
 
-<body class="relative h-screen text-maincolor bg-gray-100 font-poppins">
+<body class="relative h-screen text-maincolor bg-gray-100 z-50 font-poppins">
     @livewireScripts
     @extends('layouts.floatingorbs')
     <livewire:headertwo />

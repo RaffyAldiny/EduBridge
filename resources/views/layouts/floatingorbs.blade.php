@@ -7,7 +7,7 @@
   .orb {
       position: absolute;
       border-radius: 50%;
-      z-index: -1;
+      z-index: -10;
       /* Keep the orb behind other elements */
       transition: transform 0.5s ease, opacity 0.5s ease;
       filter: blur(3px);
