@@ -34,7 +34,7 @@
                 </button>
 
                 <!-- Modal Content -->
-                <div class="flex items-center mb-4 ml-3">
+                <div class="flex items-center mb-2 ml-3">
                     <img src="{{ asset('img/ProfessionalLogo.png') }}" alt="Professional Logo" class="w-12 h-12 mr-4 rounded-full bg-maincolor p-1">
                     <div>
                         <h2 class="text-2xl font-bold text-maincolor">John Alex B. Thompson</h2>
@@ -114,7 +114,7 @@
                 </div>
 
                 <!-- Divider -->
-                <hr class="border-gray-600 border-5 mb-4">
+                <hr class="border-gray-600 border-5 mb-2">
 
                 <!-- Work History -->
                 <div>
