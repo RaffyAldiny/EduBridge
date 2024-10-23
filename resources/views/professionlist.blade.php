@@ -50,7 +50,7 @@
         </div>
 
         <!-- List of Professionals -->
-        <div class="bg-[#1e3a4e] py-6 px-8 mx-40 rounded-xl shadow-md float-in">
+        <div class="bg-[#1e3a4e] py-6 px-8 mx-40 rounded-xl shadow-md float-in -mt-6">
             @foreach ($professionals as $professional)
                 @php
                     // Determine the status color based on the sorted data

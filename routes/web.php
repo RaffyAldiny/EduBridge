@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfessorController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentPreferenceController;
 
@@ -26,5 +27,8 @@ Route::get('/student', function () {
 Route::get('/studentpreference', function () {
     return view('studentpreference');
 });
+
+Route::get('/studentlist', [ProfessorController::class, 'showStudentList']);
+
 
 Route::get('/studentpreference/{profession}', [StudentPreferenceController::class, 'showProfessionList']);

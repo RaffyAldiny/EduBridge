@@ -41,12 +41,16 @@ class Professionallogin extends Component
     public function login()
     {
         $credentials = ['email' => $this->email, 'password' => $this->password];
+    
         if (auth()->guard('professionals')->attempt($credentials)) {
-            return redirect()->to('/'); // Adjust as needed
+            // Redirect to the student list after successful login
+            return redirect()->to('/studentlist');
         }
-
+    
+        // Flash an error message if login fails
         session()->flash('error', 'Invalid Login Credentials');
     }
+    
     public function render()
     {
         return view('livewire.professionallogin');
