@@ -24,6 +24,10 @@ Route::get('/student', function () {
     return view('student');
 });
 
+Route::get('/professormessage', function () {
+    return view('professormessage');
+});
+
 Route::get('/studentpreference', function () {
     return view('studentpreference');
 });
