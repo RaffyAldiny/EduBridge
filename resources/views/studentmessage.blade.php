@@ -25,7 +25,7 @@
 
     <div class="flex-grow flex justify-center items-center">
         <div
-            class="bg-transparent border-white text-white pb-3 rounded-lg max-w-6xl mx-auto flex flex-col w-full h-[500px]">
+            class="bg-transparent border-maincolor text-white pb-3 rounded-lg max-w-6xl mx-auto flex flex-col w-full h-[500px]">
 
             <!-- User Profile Section -->
             <div class="flex justify-between items-center border-b-2 border-maincolor py-2 mb-2">
@@ -75,7 +75,7 @@
             </div>
 
             <!-- Chat Messages Section -->
-            <div class="flex-grow border-2 border-white p-4 overflow-y-auto max-h-full text-sm">
+            <div class="flex-grow border-2 border-maincolor p-4 overflow-y-auto max-h-full text-sm">
 
                 <!-- Message from Thompson (Left-aligned) -->
                 <div class="flex items-start mb-6">
@@ -140,7 +140,7 @@
             </div>
 
             <!-- Input Section -->
-            <div class="border-x-2 border-b-2 flex items-center">
+            <div class="border-x-2 border-b-2 border-maincolor flex items-center">
                 <!-- Paper Clip Icon -->
                 <button class="mr-4 ml-4 text-white rounded-full hover:bg-white hover:bg-opacity-50">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
