@@ -21,7 +21,7 @@
     @include('layouts.floatingorbs')
 
     <!-- Header Section -->
-    <livewire:headerthree />
+    <livewire:headertwo />
 
     <div class="flex-grow flex justify-center items-center">
         <div
