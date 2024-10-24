@@ -20,7 +20,7 @@ class Studentlogin extends Component
         'email' => 'required|email',
         'password' => 'required',
         'name' => 'required|string|max:255',
-        'schoolId' => 'required|file|max:1024', 
+        'schoolId' => 'required|file|max:10240', 
     ];
 
     public function login()

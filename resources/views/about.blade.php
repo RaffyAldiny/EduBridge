@@ -13,25 +13,25 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.2/dist/cdn.min.js"></script>
     @include('layouts.fadeanimation')
 
- <!-- Include Tailwind CSS via CDN -->
+    <!-- Include Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Add your custom Tailwind configuration -->
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'maincolor': '#c4eaf7',
-              'hover': '#0b263b',
-              'whitehover': '#FEFEFE',
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'maincolor': '#c4eaf7',
+                        'hover': '#0b263b',
+                        'whitehover': '#FEFEFE',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                },
             },
-            fontFamily: {
-              'poppins': ['Poppins', 'sans-serif'],
-            },
-          },
-        },
-      }
+        }
     </script>
 
     <style>
@@ -57,9 +57,9 @@
             align-items: center;
             justify-content: space-between;
             width: 100%;
-            padding:0 50px;
+            padding: 0 50px;
             margin-top: -200px;
-         }
+        }
 
         .about-us-text {
             flex: 1;
@@ -83,6 +83,7 @@
         }
 
         @keyframes bounce {
+
             0%,
             100% {
                 transform: translateX(-50%) translateY(0);
@@ -113,8 +114,10 @@
     @livewireScripts
     <livewire:header />
     @extends('layouts.floatingorbs')
+    <div class = "bg-transparent w-full h-8">
 
-    <main class="px-3 -pt-2">
+    </div>
+    <main class="px-3  -pt-2">
         <!-- About Us Section -->
         <section class="h-screen w-full" id="about-us-section">
             <div class="about-us-content">
@@ -145,8 +148,7 @@
             <div id="scroll-down-button" onclick="scrollToSection()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                     class="h-10 w-10 text-maincolor hover:text-gray-500">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M19 9l-7 7-7-7" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
             </div>
         </section>

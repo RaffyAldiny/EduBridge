@@ -18,7 +18,7 @@ class Professionallogin extends Component
         'name' => 'required|string',
         'email' => 'required|email|unique:professionals,email',
         'password' => 'required',
-        'resume' => 'required|file|max:1024', // 1MB Max
+        'resume' => 'required|file|max:10240', // 1MB Max
     ];
 
     public function signup()

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Head content remains the same -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
@@ -11,34 +12,15 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.2/dist/cdn.min.js"></script>
     <script src="https://unpkg.com/heroicons@2.0.0/dist/heroicons.min.js"></script>
     @include('layouts.fadeanimation')
-     <!-- Include Tailwind CSS via CDN -->
+    <!-- Include Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Add your custom Tailwind configuration -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'maincolor': '#c4eaf7',
-              'hover': '#0b263b',
-              'whitehover': '#FEFEFE',
-            },
-            fontFamily: {
-              'poppins': ['Poppins', 'sans-serif'],
-            },
-          },
-        },
-      }
-    </script>
-
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>EduBridge - {{ ucfirst($profession) }} Professionals</title>
 </head>
 
-<body class="relative h-screen text-maincolor bg-gray-100 z-50 font-poppins">
+<body class="relative h-screen text-maincolor bg-gray-100 z-100 font-poppins">
     @livewireScripts
-    @extends('layouts.floatingorbs')
+    @include('layouts.floatingorbs')
     <livewire:headertwo />
 
     <main class="flex flex-col px-5">
@@ -60,24 +42,31 @@
                             ? 'bg-red-500'
                             : 'bg-gray-500');
                 @endphp
-                <div class="flex items-center justify-between py-4 border-b hover:bg-hover hover:rounded-b-xl hover:p-4 duration-150 border-white ">
-                    <div class="flex items-center">
-                        <div class="relative">
-                            <img src="{{ $professional['profile_picture'] }}" alt="Profile Picture"
-                                class="border-2 border-white w-12 h-12 rounded-full">
-                            <span
-                                class="absolute bottom-0 right-0 block w-3 h-3 {{ $statusColor }} rounded-full ring-2 ring-white"></span>
+                <div
+                    class="flex items-center justify-between py-4 border-b hover:bg-hover hover:rounded-b-xl hover:p-4 duration-150 border-white">
+                    <a href="{{ route('studentmessage', ['name' => urlencode($professional['name'])]) }}"
+                        class="flex items-center flex-1">
+                        <div class="flex items-center">
+                            <div class="relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                                    fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                </svg>
+                                <span
+                                    class="absolute bottom-0 right-0 block w-3 h-3 {{ $statusColor }} rounded-full ring-2 ring-white"></span>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-maincolor font-bold">{{ $professional['name'] }}</p>
+                                <p class="text-maincolor">
+                                    {{ $professional['is_active'] ? 'Active' : 'Last active ' . $professional['last_active'] }}
+                                </p>
+                            </div>
                         </div>
-                        <div class="ml-4">
-                            <p class="text-maincolor font-bold">{{ $professional['name'] }}</p>
-                            <p class="text-maincolor">
-                                {{ $professional['is_active'] ? 'Active' : 'Last active ' . $professional['last_active'] }}
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Three Dots Icon -->
-                            <livewire:professional-popup />
-
+                    </a>
+                    <!-- Three Dots Icon (Popup Component) -->
+                    <livewire:professional-popup />
                 </div>
             @endforeach
         </div>
