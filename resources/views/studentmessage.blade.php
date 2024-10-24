@@ -78,7 +78,7 @@
             <div class="flex-grow border-2 border-maincolor p-4 overflow-y-auto max-h-full text-sm">
 
                 <!-- Message from Thompson (Left-aligned) -->
-                <div class="flex items-start mb-6">
+                <div class="flex items-start mb-6 items-end">
                     <div class="w-10 h-10">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#FFFFFF"
                             class="mr-3 bi bi-person-circle" viewBox="0 0 16 16">
@@ -123,8 +123,8 @@
                     </div>
                 </div>
 
-                <!-- Response from Thompson (Left-aligned) -->
-                <div class="flex items-start mb-6">
+                <!-- Message from Thompson (Left-aligned) -->
+                <div class="flex items-start mb-6 items-end">
                     <div class="w-10 h-10">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#FFFFFF"
                             class="mr-3 bi bi-person-circle" viewBox="0 0 16 16">
@@ -133,7 +133,7 @@
                                 d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                         </svg>
                     </div>
-                    <div class="inline-block text-hover bg-maincolor px-4 py-2 rounded-2xl max-w-md text-start">
+                    <div class="inline-block bg-maincolor text-hover px-4 py-2 ml-2 rounded-2xl max-w-md">
                         <p>Of course, I’m available every Thursday after 7PM. You can call me then.</p>
                     </div>
                 </div>
