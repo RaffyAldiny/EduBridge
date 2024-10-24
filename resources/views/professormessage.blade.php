@@ -16,7 +16,7 @@
     <title>EduBridge</title>
 </head>
 
-<body class="relative h-screen flex flex-col text-maincolor bg-gray-100 z-50 font-poppins">
+<body class="relative min-h-screen flex flex-col text-maincolor bg-gray-100 z-50 font-poppins">
     @livewireScripts
     @extends('layouts.floatingorbs')
 
@@ -24,47 +24,49 @@
     <livewire:headerthree />
 
     <!-- Main Message Box Section -->
-    <div class="flex-grow flex">
-        <div class="bg-gray-800 text-white p-6 rounded-lg shadow-md max-w-4xl mx-auto flex flex-col w-full">
+    <div class="flex-grow flex justify-center items-center">
+        <div
+            class="bg-transparent border-white text-white p-1 rounded-lg max-w-6xl mx-auto flex flex-col w-full h-[600px]">
             <!-- User Profile Section -->
-            <div class="flex justify-between items-center mb-6">
+            <div class="flex justify-between items-center border-b-2 border-maincolor py-2 mb-2">
                 <div class="flex items-center">
                     <!-- Profile Picture with updated person icon using Heroicons -->
                     <div class="relative">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-12 h-12 text-white">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                         </svg>
-                        <span class="absolute bottom-0 right-0 block h-3 w-3 rounded-full bg-green-500"></span>
+                        <span class="absolute bottom-1 right-1 block h-4 w-4 rounded-full bg-green-500"></span>
                     </div>
                     <div class="ml-4">
-                        <h3 class="text-lg font-bold">Earvin John T. Dela Cruz</h3>
-                        <p class="text-sm text-gray-400">Active now</p>
+                        <h3 class="text-lg font-bold text-white opacity-95">Earvin John T. Dela Cruz</h3>
+                        <p class="text-sm text-white opacity-95">Active now</p>
                     </div>
                 </div>
                 <!-- Buttons (Call, Video, Info) -->
                 <div class="flex items-center space-x-4">
-                    <button class="bg-gray-700 p-2 rounded-full hover:bg-gray-600">
+                    <button class="bg-maincolor p-2 rounded-full hover:bg-whitehover">
                         <!-- Phone Icon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="#000000" class="w-8 h-8">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                         </svg>
                     </button>
-                    <button class="bg-gray-700 p-2 rounded-full hover:bg-gray-600">
+                    <button class="bg-maincolor  p-2 rounded-full hover:bg-whitehover">
                         <!-- Camera Icon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="#000000" class="w-8 h-8">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
                         </svg>
                     </button>
-                    <button class="bg-gray-700 p-2 rounded-full hover:bg-gray-600">
+                    <button class="bg-maincolor  p-2 rounded-full hover:bg-gray-600">
                         <!-- Info Icon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="#000000" class="w-8 h-8">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
                         </svg>
@@ -73,42 +75,64 @@
             </div>
 
             <!-- Chat Messages Section -->
-            <div class="flex-grow bg-gray-900 rounded-lg p-4 overflow-y-auto">
-                <!-- Message 1 -->
-                <div class="mb-4">
-                    <p class="text-xs text-gray-500 mb-1 text-center">5:35 PM</p>
-                    <div class="text-right">
-                        <div class="inline-block bg-blue-600 px-4 py-2 rounded-md max-w-md">
-                            <p>Yes, I have marked the parts you need to change. I have also included suggestions and comments that will help you on that part.</p>
+            <div class="flex-grow border-2 border-white p-4 overflow-y-auto max-h-full">
+                <!-- Message Group 1 (From User) -->
+                <div class="mb-6">
+                    <p class="text-xs text-white mb-2 text-center">5:35 PM</p>
+                    <div class="text-right space-y-2 relative">
+                        <div class="inline-block bg-maincolor text-hover px-4 py-2 rounded-2xl text-left max-w-md">
+                            <p>Yes, I have marked the parts you need to change. I have also included suggestions and
+                                comments that will help you on that part.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Message 2 -->
-                <div class="mb-4">
-                    <p class="text-xs text-gray-500 mb-1 text-center">5:48 PM</p>
-                    <div>
-                        <div class="inline-block bg-gray-700 px-4 py-2 rounded-md max-w-md">
-                            <p>Duly noted on that sir Thompson.</p>
+                <div class="mb-6">
+                    <p class="text-xs text-white mb-2 text-center">5:48 PM</p>
+                    <div class="space-y-6">
+                        <!-- First message from Earvin -->
+                        <div class="flex items-start relative">
+                            <div class="w-8 h-8 mr-2">
+                                <!-- Empty div with fixed width and height for alignment -->
+                            </div>
+                            <div
+                                class="relative inline-block bg-darkgray text-hover px-4 py-2 ml-2 rounded-2xl max-w-md">
+                                <p>Duly noted on that sir Thompson.</p>
+                                <!-- Reaction Button (Thumbs-up) -->
+                                <button
+                                    class="absolute -bottom-4 right-0 bg-white stroke-hover text-white p-1 rounded-full hover:bg-gray-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="#000000" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Second message from Earvin (Last Message with Profile Icon) -->
+                        <div class="flex items-end">
+                            <div class="w-10 h-10">
+                                <!-- Profile Picture SVG aligned with the bottom of the message -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#FFFFFF"
+                                    class="mr-3 bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                </svg>
+                            </div>
+                            <div class="inline-block bg-darkgray text-hover px-4 py-2 ml-2 rounded-2xl max-w-md">
+                                <p>If it is alright with you sir, when could we schedule a meeting for the final
+                                    consultation?</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Message 3 -->
-                <div class="mb-4">
-                    <p class="text-xs text-gray-500 mb-1 text-center">5:48 PM</p>
-                    <div>
-                        <div class="inline-block bg-gray-700 px-4 py-2 rounded-md max-w-md">
-                            <p>If it is alright with you sir, when could we schedule a meeting for the final consultation?</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Message 4 -->
-                <div class="mb-4">
-                    <p class="text-xs text-gray-500 mb-1 text-center">5:48 PM</p>
-                    <div class="text-right">
-                        <div class="inline-block bg-blue-600 px-4 py-2 rounded-md max-w-md">
+                <!-- Message Group 3 (From User) -->
+                <div class="mb-6">
+                    <p class="text-xs text-white mb-2 text-center">5:50 PM</p>
+                    <div class="text-right space-y-2">
+                        <div class="inline-block text-hover bg-maincolor px-4 py-2 rounded-2xl max-w-md text-start">
                             <p>Of course, I’m available every Thursday after 7PM. You can call me then.</p>
                         </div>
                     </div>
@@ -116,24 +140,24 @@
             </div>
 
             <!-- Input Section -->
-            <div class="mt-4 flex items-center">
+            <div class="border-x-2 border-b-2 flex items-center ">
                 <!-- Paper Clip Icon -->
-                <button class="mr-4 bg-gray-700 text-white p-2 rounded-full hover:bg-gray-600">
+                <button class="mr-4 ml-4 text-white rounded-full hover:bg-white hover:bg-opacity-50">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
+                        stroke="currentColor" class="w-8 h-8">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" />
                     </svg>
                 </button>
 
                 <!-- Input Field -->
-                <input type="text" class="w-full bg-gray-700 text-white rounded-lg p-3 focus:outline-none"
-                    placeholder="Type your message here...">
+                <input type="text" class="w-full h-5/6 bg-white text-black rounded-lg p-3 focus:outline-none"
+                    placeholder="Aa">
 
                 <!-- Send Icon -->
-                <button class="ml-4 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
+                <button class="ml-4 mr-4 text-white rounded-full hover:bg-white hover:bg-opacity-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-8 h-8">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
                     </svg>
