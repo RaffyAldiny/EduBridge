@@ -26,7 +26,7 @@
     <!-- Main Message Box Section -->
     <div class="flex-grow flex justify-center items-center">
         <div
-            class="bg-transparent border-white text-white pb-3 rounded-lg max-w-6xl mx-auto flex flex-col w-full h-[520px]">
+            class="bg-transparent border-white text-white pb-3 rounded-lg max-w-6xl mx-auto flex flex-col w-full h-[500px]">
             <!-- User Profile Section -->
             <div class="flex justify-between items-center border-b-2 border-maincolor py-2 mb-2">
                 <div class="flex items-center">
