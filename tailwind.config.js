@@ -7,7 +7,8 @@ export default {
   safelist: [
     'bg-whitehover', 
     'hover:bg-whitehover',
-    'text-whitehover'
+    'text-whitehover',
+    'bg-darkgray'
   ],
   theme: {
     extend: {
