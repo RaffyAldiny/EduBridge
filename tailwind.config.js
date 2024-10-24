@@ -3,10 +3,11 @@ export default {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
-    // Safelisting whitehover to prevent it from being purged
-    {
-      safelist: ['bg-whitehover', 'hover:bg-whitehover','text-whitehover'],
-    },
+  ],
+  safelist: [
+    'bg-whitehover', 
+    'hover:bg-whitehover',
+    'text-whitehover'
   ],
   theme: {
     extend: {
