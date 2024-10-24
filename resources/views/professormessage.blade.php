@@ -78,7 +78,7 @@
                 <div class="mb-6">
                     <p class="text-xs text-white mb-2 text-center">5:35 PM</p>
                     <div class="text-right space-y-2 relative">
-                        <div class="inline-block bg-maincolor text-hover px-4 py-2 rounded-2xl text-left max-w-md">
+                        <div class="inline-block bg-white text-hover px-4 py-2 rounded-2xl text-left max-w-md">
                             <p>Yes, I have marked the parts you need to change. I have also included suggestions and
                                 comments that will help you on that part.</p>
                         </div>
@@ -94,7 +94,7 @@
                                 <!-- Empty div with fixed width and height for alignment -->
                             </div>
                             <div
-                                class="relative inline-block bg-darkgray text-hover px-4 py-2 ml-2 rounded-2xl max-w-md">
+                                class="relative inline-block bg-maincolor text-hover px-4 py-2 ml-2 rounded-2xl max-w-md">
                                 <p>Duly noted on that sir Thompson.</p>
                                 <!-- Reaction Button (Thumbs-up) -->
                                 <button
@@ -118,7 +118,7 @@
                                         d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                                 </svg>
                             </div>
-                            <div class="inline-block bg-darkgray text-hover px-4 py-2 ml-2 rounded-2xl max-w-md">
+                            <div class="inline-block bg-maincolor text-hover px-4 py-2 ml-2 rounded-2xl max-w-md">
                                 <p>If it is alright with you sir, when could we schedule a meeting for the final
                                     consultation?</p>
                             </div>
@@ -129,7 +129,7 @@
                 <!-- Message Group 3 (From User) -->
                 <div class="mb-6">
                     <div class="text-right space-y-2">
-                        <div class="inline-block text-hover bg-maincolor px-4 py-2 rounded-2xl max-w-md text-start">
+                        <div class="inline-block text-hover bg-white px-4 py-2 rounded-2xl max-w-md text-start">
                             <p>Of course, I’m available every Thursday after 7PM. You can call me then.</p>
                         </div>
                     </div>
