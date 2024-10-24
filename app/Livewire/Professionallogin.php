@@ -35,7 +35,7 @@ class Professionallogin extends Component
         ]);
 
         session()->flash('success', 'Sign-up Successful. Please wait for approval.');
-        return redirect()->to('/professormessage'); // Updated redirection
+        return redirect()->to('/login'); // Updated redirection
     }
 
     public function login()

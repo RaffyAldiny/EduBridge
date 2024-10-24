@@ -81,6 +81,7 @@
                         </button>
                     </a>
                 </li>
+                {{--
                 <li>
                     <a href="{{ url('/') }}">
                         <button class="text-black w-full pb-2 bg-maincolor hover:font-bold rounded"
@@ -89,7 +90,6 @@
                         </button>
                     </a>
                 </li>
-                {{--
                 <li>
                     <a href="{{ url('/about') }}">
                         <button class="text-black w-full py-2 bg-maincolor hover:font-bold rounded"
