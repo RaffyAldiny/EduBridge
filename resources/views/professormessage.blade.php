@@ -26,7 +26,7 @@
     <!-- Main Message Box Section -->
     <div class="flex-grow flex justify-center items-center">
         <div
-            class="bg-transparent border-white text-white p-1 rounded-lg max-w-6xl mx-auto flex flex-col w-full h-[600px]">
+            class="bg-transparent border-white text-white pb-3 rounded-lg max-w-6xl mx-auto flex flex-col w-full h-[520px]">
             <!-- User Profile Section -->
             <div class="flex justify-between items-center border-b-2 border-maincolor py-2 mb-2">
                 <div class="flex items-center">
@@ -41,13 +41,13 @@
                         <span class="absolute bottom-1 right-1 block h-4 w-4 rounded-full bg-green-500"></span>
                     </div>
                     <div class="ml-4">
-                        <h3 class="text-lg font-bold text-white opacity-95">Earvin John T. Dela Cruz</h3>
+                        <h3 class="text-lg font-bold text-white opacity-95">{{ $name }} </h3>
                         <p class="text-sm text-white opacity-95">Active now</p>
                     </div>
                 </div>
                 <!-- Buttons (Call, Video, Info) -->
                 <div class="flex items-center space-x-4">
-                    <button class="bg-maincolor p-2 rounded-full hover:bg-whitehover">
+                    <button class="bg-whitehover p-2 rounded-full hover:bg-maincolor">
                         <!-- Phone Icon -->
                         <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="#000000" class="w-8 h-8">
@@ -55,7 +55,7 @@
                                 d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                         </svg>
                     </button>
-                    <button class="bg-maincolor  p-2 rounded-full hover:bg-whitehover">
+                    <button class="bg-white  p-2 rounded-full hover:bg-maincolor">
                         <!-- Camera Icon -->
                         <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="#000000" class="w-8 h-8">
@@ -63,19 +63,17 @@
                                 d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
                         </svg>
                     </button>
-                    <button class="bg-maincolor  p-2 rounded-full hover:bg-gray-600">
+                    <button class="bg-whitehover p-2 rounded-full bg-opacity-75 hover:bg-maincolor hover:bg-opacity-75">
                         <!-- Info Icon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                            stroke="#000000" class="w-8 h-8">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="#000000" class="bi bi-info-lg" viewBox="0 0 16 16">
+                            <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0"/>
+                          </svg>
                     </button>
                 </div>
             </div>
 
             <!-- Chat Messages Section -->
-            <div class="flex-grow border-2 border-white p-4 overflow-y-auto max-h-full">
+            <div class="flex-grow border-2 border-white p-4 overflow-y-auto max-h-full text-sm">
                 <!-- Message Group 1 (From User) -->
                 <div class="mb-6">
                     <p class="text-xs text-white mb-2 text-center">5:35 PM</p>

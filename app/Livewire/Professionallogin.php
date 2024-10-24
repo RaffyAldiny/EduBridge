@@ -35,7 +35,7 @@ class Professionallogin extends Component
         ]);
 
         session()->flash('success', 'Sign-up Successful. Please wait for approval.');
-        return redirect()->to('/login'); // Or handle as per your flow
+        return redirect()->to('/professormessage'); // Updated redirection
     }
 
     public function login()
@@ -43,8 +43,8 @@ class Professionallogin extends Component
         $credentials = ['email' => $this->email, 'password' => $this->password];
     
         if (auth()->guard('professionals')->attempt($credentials)) {
-            // Redirect to the student list after successful login
-            return redirect()->to('/studentlist');
+            // Redirect to the professormessage page after successful login
+            return redirect()->to('/studentlist'); // Updated redirection
         }
     
         // Flash an error message if login fails

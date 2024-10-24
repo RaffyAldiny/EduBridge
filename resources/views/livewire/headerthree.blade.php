@@ -1,4 +1,4 @@
-<div class="relative p-4">
+<div class="relative px-4 pt-4">
     <!-- Sticky background image -->
     <div class="fixed inset-0 bg-cover bg-center z-[-1]"
         style="background-image: url('{{ asset('img/edubridgebg.png') }}');"></div>

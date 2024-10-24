@@ -32,6 +32,13 @@ Route::get('/studentpreference', function () {
     return view('studentpreference');
 });
 
+Route::get('/professormessage/{name}', function ($name) {
+    // Use urldecode to reverse the URL encoding
+    $decodedName = urldecode($name);
+    // Handle the student name here
+    return view('professormessage', ['name' => $decodedName]);
+})->name('professormessage');
+
 Route::get('/studentlist', [ProfessorController::class, 'showStudentList']);
 
 

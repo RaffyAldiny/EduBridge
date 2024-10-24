@@ -30,25 +30,26 @@
             </div>
         </div>
 
-        <!-- List of Students -->
         <div class="bg-[#1e3a4e] py-6 px-8 mx-40 rounded-xl shadow-md float-in -mt-2">
             @foreach ($students as $student)
-                <div class="flex items-center justify-between py-4 border-b hover:bg-hover hover:rounded-b-xl hover:p-4 duration-150 border-white">
-                    <div class="flex items-center">
-                        <div class="relative">
-                            <img src="{{ $student['profile_picture'] }}" alt="Profile Picture"
-                                class="border-2 border-white w-12 h-12 rounded-full">
-                            <span
-                                class="absolute bottom-0 right-0 block w-3 h-3 {{ $student['status_color'] }} rounded-full ring-2 ring-white"></span>
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-maincolor font-bold">{{ $student['name'] }}</p>
-                            <p class="text-maincolor">{{ $student['message'] }} <span class="text-maincolor"> • {{ $student['time'] }}</span></p>
+                <a href="{{ route('professormessage', ['name' => urlencode($student['name'])]) }}" class="block">
+                    <div class="flex items-center justify-between py-4 border-b hover:bg-hover hover:rounded-b-xl hover:p-4 duration-150 border-white cursor-pointer">
+                        <div class="flex items-center">
+                            <div class="relative">
+                                <img src="{{ $student['profile_picture'] }}" alt="Profile Picture"
+                                    class="border-2 border-white w-12 h-12 rounded-full">
+                                <span class="absolute bottom-0 right-0 block w-3 h-3 {{ $student['status_color'] }} rounded-full ring-2 ring-white"></span>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-maincolor font-bold">{{ $student['name'] }}</p>
+                                <p class="text-maincolor">{{ $student['message'] }} <span class="text-maincolor"> • {{ $student['time'] }}</span></p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             @endforeach
         </div>
+        
     </main>
 </body>
 
