@@ -21,9 +21,15 @@
         </button>
 
         <!-- Popup Modal -->
-        <div x-show="showPopup" 
-        class="fixed inset-0 bg-opacity-50 flex justify-center items-center z-50">
-        <div class="relative bg-black pt-6 pb-6 px-8 rounded-lg shadow-2xl mb-16 text-white">
+        <div x-show="showPopup"
+            x-transition:enter="ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-75"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="ease-in duration-200"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-75"
+            class="fixed inset-0 bg-opacity-50 flex justify-center items-center z-50">
+            <div class="relative bg-black pt-6 pb-6 px-8 rounded-lg shadow-2xl mb-16 text-white">
                 <!-- X Button to close modal -->
                 <button @click="showPopup = false" class="absolute top-4 right-3 text-gray-500 hover:text-gray-300">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
