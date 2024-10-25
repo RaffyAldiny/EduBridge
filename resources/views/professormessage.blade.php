@@ -29,7 +29,6 @@
             class="bg-transparent border-white text-white pb-3 rounded-lg max-w-6xl mx-auto flex flex-col w-full h-[500px]">
             <!-- User Profile Section -->
             <div class="flex justify-between items-center border-b-2 border-maincolor py-2 mb-2">
-                <div class="flex items-center">
                     <!-- Profile Picture with updated person icon using Heroicons -->
                     <div class="relative">
                         <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor"
