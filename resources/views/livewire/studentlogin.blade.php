@@ -1,9 +1,18 @@
 <!-- Student Login-Signup Modal -->
-<div x-show="showStudentModal" x-cloak 
+<div x-show="showStudentModal" 
+     x-cloak 
      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" 
      x-data="{ isLogin: true, fileNameStudent: '' }">
      
-    <div class="bg-maincolor pt-3 pb-1 pr-6 pl-6 rounded-[6px] shadow-lg w-[400px]">
+    <!-- Modal Content with Transition -->
+    <div x-show="showStudentModal"
+         x-transition:enter="ease-out duration-300"
+         x-transition:enter-start="opacity-0 scale-75"
+         x-transition:enter-end="opacity-100 scale-100"
+         x-transition:leave="ease-in duration-200"
+         x-transition:leave-start="opacity-100 scale-100"
+         x-transition:leave-end="opacity-0 scale-75"
+         class="bg-maincolor pt-3 pb-1 pr-6 pl-6 rounded-[6px] shadow-lg w-[400px]">
         
         @if (session()->has('error'))
             <div class="alert alert-danger text-center leading-tight">
