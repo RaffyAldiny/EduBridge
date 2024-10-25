@@ -114,7 +114,7 @@
     @livewireScripts
     <livewire:header />
     @extends('layouts.floatingorbs')
-    <div class = "bg-transparent w-full h-8">
+    <div class = "bg-transparent w-full h-2">
 
     </div>
     <main class="px-3  -pt-2">
