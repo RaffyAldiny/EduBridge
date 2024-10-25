@@ -23,9 +23,9 @@
     <!-- Header Section -->
     <livewire:headertwo />
 
-    <div class="flex-grow flex justify-center items-center">
+    <div class="flex justify-center items-center">
         <div
-            class="bg-transparent border-maincolor text-white pb-3 rounded-lg max-w-6xl mx-auto flex flex-col w-full h-[550px]">
+            class="bg-transparent border-maincolor text-white rounded-lg mx-14 flex flex-col w-full h-full">
 
             <!-- User Profile Section -->
             <div class="flex justify-between items-center border-b-2 border-maincolor py-2 mb-2">
