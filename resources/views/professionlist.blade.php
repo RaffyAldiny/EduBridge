@@ -66,7 +66,7 @@
                         </div>
                     </a>
                     <!-- Three Dots Icon (Popup Component) -->
-                    <livewire:professional-popup />
+                    <livewire:professionalpopup :professional="$professional" />
                 </div>
             @endforeach
         </div>

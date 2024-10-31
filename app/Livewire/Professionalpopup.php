@@ -6,11 +6,20 @@ use Livewire\Component;
 
 class Professionalpopup extends Component
 {
-    public $showPopup = false; 
+    
+    public $professional;
+    public $showPopup = false;
 
-    public function togglePopup()
+    // This function would be triggered when the professional is selected
+    public function show($professional)
     {
-        $this->showPopup = !$this->showPopup;
+        $this->professional = $professional;
+        $this->showPopup = true;
+    }
+
+    public function closeModal()
+    {
+        $this->showPopup = false;
     }
     public function render()
     {

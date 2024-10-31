@@ -21,11 +21,11 @@
     @include('layouts.floatingorbs')
 
     <!-- Header Section -->
-    <livewire:headerthree />
+    <livewire:headertwo />
 
-    <div class="flex-grow flex justify-center items-center">
+    <div class="flex justify-center items-center">
         <div
-            class="bg-transparent border-white text-white pb-3 rounded-lg max-w-6xl mx-auto flex flex-col w-full h-[500px]">
+            class="bg-transparent border-maincolor text-white rounded-lg mx-14 flex flex-col w-full h-full">
 
             <!-- User Profile Section -->
             <div class="flex justify-between items-center border-b-2 border-maincolor py-2 mb-2">
@@ -75,10 +75,10 @@
             </div>
 
             <!-- Chat Messages Section -->
-            <div class="flex-grow border-2 border-white p-4 overflow-y-auto max-h-full text-sm">
+            <div class="flex-grow border-2 border-maincolor p-4 overflow-y-auto max-h-full text-sm">
 
                 <!-- Message from Thompson (Left-aligned) -->
-                <div class="flex items-start mb-6">
+                <div class="flex items-start mb-6 items-end">
                     <div class="w-10 h-10">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#FFFFFF"
                             class="mr-3 bi bi-person-circle" viewBox="0 0 16 16">
@@ -87,7 +87,7 @@
                                 d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                         </svg>
                     </div>
-                    <div class="inline-block bg-darkgray text-hover px-4 py-2 ml-2 rounded-2xl max-w-md">
+                    <div class="inline-block bg-maincolor text-hover px-4 py-2 ml-2 rounded-2xl max-w-md">
                         <p>Yes, I have marked the parts you need to change. I have also included suggestions and
                             comments that will help you on that part.</p>
                     </div>
@@ -98,7 +98,7 @@
 
                 <!-- Message from User (Right-aligned) -->
                 <div class="flex justify-end mb-6 relative">
-                    <div class="inline-block text-hover bg-maincolor px-4 py-2 rounded-2xl max-w-md text-start">
+                    <div class="inline-block text-hover bg-white px-4 py-2 rounded-2xl max-w-md text-start">
                         <p>Duly noted on that sir Thompson.</p>
                     </div>
                     <!-- Reaction Button (Thumbs-up) -->
@@ -117,14 +117,14 @@
 
                 <!-- Another message from User (Right-aligned) -->
                 <div class="flex justify-end mb-6">
-                    <div class="inline-block bg-darkgray text-hover px-4 py-2 ml-2 rounded-2xl max-w-md">
+                    <div class="inline-block bg-white text-hover px-4 py-2 ml-2 rounded-2xl max-w-md">
                         <p>If it is alright with you sir, when could we schedule a meeting for the final consultation?
                         </p>
                     </div>
                 </div>
 
-                <!-- Response from Thompson (Left-aligned) -->
-                <div class="flex items-start mb-6">
+                <!-- Message from Thompson (Left-aligned) -->
+                <div class="flex items-start mb-6 items-end">
                     <div class="w-10 h-10">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#FFFFFF"
                             class="mr-3 bi bi-person-circle" viewBox="0 0 16 16">
@@ -133,14 +133,14 @@
                                 d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                         </svg>
                     </div>
-                    <div class="inline-block text-hover bg-maincolor px-4 py-2 rounded-2xl max-w-md text-start">
+                    <div class="inline-block bg-maincolor text-hover px-4 py-2 ml-2 rounded-2xl max-w-md">
                         <p>Of course, I’m available every Thursday after 7PM. You can call me then.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Input Section -->
-            <div class="border-x-2 border-b-2 flex items-center">
+            <div class="border-x-2 border-b-2 border-maincolor flex items-center">
                 <!-- Paper Clip Icon -->
                 <button class="mr-4 ml-4 text-white rounded-full hover:bg-white hover:bg-opacity-50">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
